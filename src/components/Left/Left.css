@@ -1,0 +1,25 @@
+.left {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  min-height: 1221px;
+  position: absolute;
+  top: 0;
+  width: 295px;
+}
+
+.left.left-1 {
+  align-self: flex-end;
+  left: unset;
+  margin-top: 92px;
+  position: relative;
+  top: unset;
+}
+
+.left.left-2 {
+  left: unset;
+  position: relative;
+  top: unset;
+}
+

@@ -1,0 +1,33 @@
+.rating-14 {
+  align-self: flex-start;
+  height: 29px;
+  margin-left: 18px;
+  margin-top: 13px;
+}
+
+.rating-14.rating-8,
+.rating-14.rating-9,
+.rating-14.rating-10,
+.rating-14.rating-11 {
+  align-self: flex-start;
+  height: 29px;
+  margin-left: 18px;
+  margin-top: 23px;
+}
+
+.rating-14.rating-12,
+.rating-14.rating-13 {
+  align-self: flex-start;
+  height: 29px;
+  margin-left: 16px;
+  margin-top: 23px;
+}
+
+.rating-14.rating-6 {
+  margin-top: 23px;
+}
+
+.rating-14.rating-7 {
+  margin-top: 12px;
+}
+

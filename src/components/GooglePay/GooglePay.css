@@ -1,0 +1,39 @@
+.google-pay {
+  align-items: flex-start;
+  display: flex;
+  margin-left: 47px;
+  width: 50px;
+}
+
+.google-pay-1 {
+  align-items: flex-end;
+  background-color: var(--white);
+  border-radius: 3px;
+  display: flex;
+  height: 32px;
+  min-width: 50px;
+  padding: 7.5px 6px;
+}
+
+.group {
+  height: 15px;
+  width: 38px;
+}
+
+.google-pay.visa,
+.google-pay.visa-2 {
+  margin-left: 18px;
+}
+
+.google-pay.visa .google-pay-1,
+.google-pay.visa-2 .google-pay-1 {
+  align-items: flex-start;
+  margin-top: 0;
+  padding: 10.3px 6px;
+}
+
+.google-pay.visa .group,
+.google-pay.visa-2 .group {
+  height: 11px;
+}
+

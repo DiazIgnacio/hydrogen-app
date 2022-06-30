@@ -1,0 +1,23 @@
+.remove-button {
+  height: 36px;
+  margin-bottom: 7.0px;
+  margin-left: 203px;
+}
+
+.remove-button.remove-button-2 {
+  height: 36px;
+  margin-bottom: 9.0px;
+  margin-left: 203px;
+}
+
+.remove-button.remove-button-1 {
+  margin-bottom: 9.0px;
+}
+
+.remove-button.remove-button-3 {
+  align-self: flex-start;
+  height: 36px;
+  margin-left: 203px;
+  margin-top: 5px;
+}
+

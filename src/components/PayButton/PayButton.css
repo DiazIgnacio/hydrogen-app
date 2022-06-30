@@ -1,0 +1,13 @@
+.pay-button {
+  align-self: flex-end;
+  height: 53px;
+  margin-right: 40px;
+  margin-top: 83px;
+}
+
+.pay-button.pay-button-1 {
+  align-self: unset;
+  margin-right: unset;
+  margin-top: 56px;
+}
+

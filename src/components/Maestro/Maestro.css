@@ -1,0 +1,26 @@
+.maestro,
+.maestro-2 {
+  align-items: flex-start;
+  display: flex;
+  margin-left: 18px;
+  width: 50px;
+}
+
+.maestro-1,
+.maestro-3 {
+  align-items: flex-start;
+  background-color: var(--white);
+  border-radius: 3px;
+  display: flex;
+  height: 32px;
+  margin-top: 0;
+  min-width: 50px;
+  padding: 6.0px 8.8px;
+}
+
+.group-4,
+.group-5 {
+  height: 20px;
+  width: 32px;
+}
+

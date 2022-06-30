@@ -1,0 +1,20 @@
+.navbar-open {
+  align-items: flex-start;
+  background-color: var(--white);
+  box-shadow: 0px 4px 5px #00000026;
+  display: flex;
+  height: 1538px;
+  padding: 20px 16px;
+  position: relative;
+  width: 428px;
+}
+
+.flex-col-3 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  min-height: 1487px;
+  position: relative;
+  width: 305px;
+}
+

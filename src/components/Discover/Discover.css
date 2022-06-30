@@ -1,0 +1,29 @@
+.discover {
+  align-items: flex-start;
+  display: flex;
+  margin-left: 18px;
+  width: 50px;
+}
+
+.discover-1 {
+  align-items: flex-start;
+  background-color: var(--white);
+  background-image: url(/static/img/mask-group@2x.svg);
+  background-size: 100% 100%;
+  border-radius: 3px;
+  display: flex;
+  height: 32px;
+  min-width: 50px;
+  padding: 12.8px 6.0px;
+}
+
+.group-6 {
+  height: 6px;
+  width: 38px;
+}
+
+.discover.discover-2 .discover-1 {
+  background-image: url(/static/img/mask-group-1@2x.svg);
+  padding: 12.8px 6px;
+}
+

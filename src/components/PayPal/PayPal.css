@@ -1,0 +1,27 @@
+.pay-pal,
+.pay-pal-2 {
+  align-items: flex-start;
+  display: flex;
+  margin-left: 47px;
+  width: 50px;
+}
+
+.pay-pal-1,
+.pay-pal-3 {
+  align-items: flex-end;
+  background-color: var(--white);
+  border-radius: 3px;
+  display: flex;
+  height: 32px;
+  justify-content: flex-end;
+  margin-top: 0;
+  min-width: 50px;
+  padding: 4.0px 11.7px;
+}
+
+.group-1,
+.group-3 {
+  height: 24px;
+  width: 27px;
+}
+

@@ -1,0 +1,14 @@
+.cart-button {
+  height: 36px;
+  margin-left: 32px;
+}
+
+.cart-button.cart-button-1 {
+  margin-left: unset;
+  margin-top: 30px;
+}
+
+.cart-button.cart-button-2 {
+  margin-left: 97px;
+}
+

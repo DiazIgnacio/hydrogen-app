@@ -1,0 +1,26 @@
+.apple-pay,
+.apple-pay-2 {
+  align-items: flex-start;
+  align-self: flex-start;
+  display: flex;
+  width: 50px;
+}
+
+.apple-pay-1,
+.apple-pay-3 {
+  align-items: flex-start;
+  background-color: var(--white);
+  border-radius: 3px;
+  display: flex;
+  height: 32px;
+  margin-top: 0;
+  min-width: 50px;
+  padding: 8.2px 6px;
+}
+
+.path,
+.path-1 {
+  height: 16px;
+  width: 38px;
+}
+
