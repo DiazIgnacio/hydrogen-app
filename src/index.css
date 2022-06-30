@@ -1,0 +1,117 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600|Inter:400,700|Roboto:500');
+/* The following line is used to measure usage of this code in production. For more info see our usage billing page */
+@import url('https://px.animaapp.com/5ff49db0a33776dee36a77bc.5ff49db2caadc30edc9ba69b.XE0mNJZ.rcp.png');
+
+:root {
+  --black: #000000;
+  --black-2: #000000de;
+  --coconut: #fefefe;
+  --eerie-black: #19191d;
+  --hawkes-blue: #d8e6ff;
+  --topaz: #787885;
+  --white: #ffffff;
+
+  --font-size-l: 20px;
+  --font-size-m: 16px;
+  --font-size-s: 14px;
+  --font-size-xl: 24px;
+  --font-size-xxl: 26px;
+  --font-size-xxxl: 38px;
+  --font-size-xxxxl: 72px;
+
+  --font-family-inter: 'Inter', Helvetica;
+  --font-family-poppins: 'Poppins', Helvetica;
+  --font-family-roboto: 'Roboto', Helvetica;
+}
+.inter-bold-black-24px {
+  color: var(--black-2);
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.inter-normal-topaz-14px {
+  color: var(--topaz);
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.inter-normal-eerie-black-16px {
+  color: var(--eerie-black);
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.roboto-medium-topaz-14px {
+  color: var(--topaz);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.inter-normal-eerie-black-20px {
+  color: var(--eerie-black);
+  font-family: var(--font-family-inter);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.poppins-normal-black-38px {
+  color: var(--black);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.poppins-medium-black-72px {
+  color: var(--black);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-xxxxl);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.poppins-medium-black-26px {
+  color: var(--black);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.screen a {
+  display: contents;
+  text-decoration: none;
+}
+
+.container-center-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  pointer-events: none;
+  width: 100%;
+}
+
+.container-center-horizontal > * {
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.valign-text-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+* {
+  box-sizing: border-box;
+}
