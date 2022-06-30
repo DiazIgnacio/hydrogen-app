@@ -8,7 +8,7 @@ import "./HomeButton4.css";
 
 function HomeButton4() {
   return (
-    <Link to="/home-page-desktop">
+    <Link to="/">
       <div className="home-button">
         <MuiMaterial.Button
           endIcon=""
