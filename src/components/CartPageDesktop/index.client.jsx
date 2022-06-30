@@ -1,19 +1,19 @@
 import React from "react";
-import HomeButton4 from "../HomeButton4";
-import TextField from "../TextField";
-import Button2 from "../Button2";
-import Button3 from "../Button3";
-import AddButton3 from "../AddButton3";
-import SubstractButton3 from "../SubstractButton3";
-import RemoveButton3 from "../RemoveButton3";
-import PaymentSystemsRadioButton from "../PaymentSystemsRadioButton";
-import ApplePay from "../ApplePay";
-import GooglePay from "../GooglePay";
-import PayPal from "../PayPal";
-import CreditCardRadioButton from "../CreditCardRadioButton";
-import Maestro from "../Maestro";
-import Discover from "../Discover";
-import PayButton from "../PayButton";
+import HomeButton4 from "../HomeButton4/index";
+import TextField from "../TextField/index";
+import Button2 from "../Button2/index";
+import Button3 from "../Button3/index";
+import AddButton3 from "../AddButton3/index";
+import SubstractButton3 from "../SubstractButton3/index";
+import RemoveButton3 from "../RemoveButton3/index";
+import PaymentSystemsRadioButton from "../PaymentSystemsRadioButton/index";
+import ApplePay from "../ApplePay/index";
+import GooglePay from "../GooglePay/index";
+import PayPal from "../PayPal/index";
+import CreditCardRadioButton from "../CreditCardRadioButton/index";
+import Maestro from "../Maestro/index";
+import Discover from "../Discover/index";
+import PayButton from "../PayButton/index";
 import "./CartPageDesktop.css";
 
 function CartPageDesktop(props) {

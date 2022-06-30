@@ -1,10 +1,10 @@
 import React from "react";
-import HomeButton5 from "../HomeButton5";
-import TextField from "../TextField";
-import Button2 from "../Button2";
-import CartButton5 from "../CartButton5";
-import Left from "../Left";
-import Rating from "../Rating";
+import HomeButton5 from "../HomeButton5/index";
+import TextField from "../TextField/index";
+import Button2 from "../Button2/index";
+import CartButton5 from "../CartButton5/index";
+import Left from "../Left/index";
+import Rating from "../Rating/index";
 import "./ProductsPageDesktop.css";
 
 function ProductsPageDesktop(props) {
