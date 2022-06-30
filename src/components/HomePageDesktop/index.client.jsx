@@ -1,9 +1,9 @@
 import React from "react";
-import Button from "../Button";
-import TextField from "../TextField";
-import ProductsButton from "../ProductsButton";
-import CartButton from "../CartButton";
-import Rating from "../Rating";
+import Button from "../Button/index";
+import TextField from "../TextField/index";
+import ProductsButton from "../ProductsButton/index";
+import CartButton from "../CartButton/index";
+import Rating from "../Rating/index";
 import "./HomePageDesktop.css";
 
 function HomePageDesktop(props) {

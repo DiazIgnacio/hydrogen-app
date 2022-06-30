@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "@shopify/hydrogen";
 import * as MuiMaterial from "@mui/material";
 import * as EmotionReact from "@emotion/react";
 import * as EmotionStyled from "@emotion/styled";
