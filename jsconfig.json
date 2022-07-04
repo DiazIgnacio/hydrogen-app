@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
     "target": "es2020",
-    "module": "esnext",
-    "moduleResolution": "node16",
+    "module": "commonjs",
+    "moduleResolution": "node",
     "lib": ["dom", "dom.iterable", "scripthost", "es2020"],
     "jsx": "react",
     "types": ["vite/client"],
