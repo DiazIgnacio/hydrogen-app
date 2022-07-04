@@ -40,6 +40,7 @@
     "@mui/icons-material": "^5.8.4",
     "@mui/material": "^5.8.6",
     "@shopify/hydrogen": "^1.0.2",
+    "@netlify/vite-plugin-netlify-edge": "^1.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.3.0"
