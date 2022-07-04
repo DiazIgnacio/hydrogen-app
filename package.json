@@ -4,15 +4,34 @@
   "version": "0.0.0",
   "license": "MIT",
   "private": true,
+  "module": "./dist/index.mjs",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./plugin": {
+      "import": "./dist/plugin.mjs",
+      "require": "./dist/plugin.js"
+    },
+    "./handler": "./dist/handler.mjs",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "shopify hydrogen dev",
-    "build": "shopify hydrogen build",
-    "preview": "shopify hydrogen preview"
+    "preview": "shopify hydrogen preview",
+    "build": "npm run build:client && npm run build:ssr",
+    "build:client": "vite build --outDir dist/client --manifest",
+    "build:ssr": "cross-env WORKER=true vite build --ssr @netlify/hydrogen-platform/handler"
   },
   "devDependencies": {
     "@netlify/hydrogen-platform": "^1.0.0",
     "@shopify/cli": "3.0.25",
     "@shopify/cli-hydrogen": "3.0.25",
+    "cross-env": "^7.0.3",
     "vite": "^2.9.0"
   },
   "dependencies": {
