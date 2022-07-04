@@ -8,7 +8,10 @@ export default defineConfig({
     // react(),
     hydrogen({
       babel: {
-        plugins: ['@babel/plugin-transform-react-jsx'],
+        plugins: [
+          '@babel/plugin-transform-react-jsx',
+          { runtime: 'automatic' },
+        ],
       },
     }),
     netlifyPlugin(),
