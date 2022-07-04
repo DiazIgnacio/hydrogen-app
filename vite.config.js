@@ -6,7 +6,11 @@ import netlifyPlugin from '@netlify/hydrogen-platform/plugin';
 export default defineConfig({
   plugins: [
     // react(),
-    hydrogen(),
+    hydrogen({
+      babel: {
+        plugins: ['@babel/plugin-transform-react-jsx'],
+      },
+    }),
     netlifyPlugin(),
   ],
 });
