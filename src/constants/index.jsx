@@ -1,3 +1,5 @@
+import React from 'react';
+
 export const rating3Data = {
   className: 'rating-8',
 };
