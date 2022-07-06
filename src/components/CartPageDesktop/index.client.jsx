@@ -16,21 +16,21 @@ import Discover from '../Discover/index';
 import PayButton from '../PayButton/index';
 
 import imageMasterCard from '../../assets/img/mastercard-1@2x.svg';
+import image1 from '../../assets/img/image-26@2x.png'
+import image2 from '../../assets/img/image-22@2x.png'
+import image3 from '../../assets/img/image-24@2x.png'
 
 import './CartPageDesktop.css';
 
 function CartPageDesktop(props) {
   const {
     myCart,
-    image1,
     desc1,
     quantity1,
     price1,
-    image2,
     desc2,
     quantity2,
     price2,
-    image3,
     desc3,
     quantity3,
     price3,
