@@ -6,7 +6,7 @@ import CartButton from '../CartButton/index';
 import Rating from '../Rating/index';
 import './HomePageDesktop.css';
 
-import overlapGroup from `../../assets/img/rectangle-1@1x.png`
+import overlapGroup from '../../assets/img/rectangle-1@1x.png';
 
 function HomePageDesktop(props) {
   const {
