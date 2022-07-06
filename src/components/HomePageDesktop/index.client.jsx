@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Button from '../Button/index';
 import TextField from '../TextField/index';
 import ProductsButton from '../ProductsButton/index';
