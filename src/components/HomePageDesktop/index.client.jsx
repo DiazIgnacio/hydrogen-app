@@ -52,7 +52,7 @@ function HomePageDesktop(props) {
         <div className="top-products valign-text-middle poppins-medium-black-72px">{topProducts}</div>
         <div className="products">
           <div className="overlap-group3">
-            <img className="image" src={image1} />
+            <img className="image" src={require(image1)} />
             <p className="desc inter-normal-eerie-black-16px">{desc1}</p>
             <div className="price valign-text-middle inter-bold-black-24px">{price1}</div>
             <p className="additional valign-text-middle inter-normal-topaz-14px">{additional1}</p>
