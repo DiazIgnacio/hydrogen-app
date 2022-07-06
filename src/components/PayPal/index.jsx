@@ -1,7 +1,7 @@
 import React from 'react';
 import './PayPal.css';
 
-import image from 'assets/img/group-1@2x.svg';
+import image from '../../assets/img/group-1@2x.svg';
 
 function PayPal() {
   return (

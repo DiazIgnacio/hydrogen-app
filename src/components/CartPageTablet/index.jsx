@@ -14,7 +14,7 @@ import Maestro from '../Maestro';
 import Discover from '../Discover';
 import PayButton from '../PayButton';
 
-import imageMasterCard from 'assets/img/mastercard@2x.svg';
+import imageMasterCard from '../../assets/img/mastercard@2x.svg';
 
 import './CartPageTablet.css';
 

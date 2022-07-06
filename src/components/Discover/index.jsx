@@ -1,7 +1,7 @@
 import React from 'react';
 import './Discover.css';
 
-import image from 'assets/img/group-4@2x.svg';
+import image from '../../assets/img/group-4@2x.svg';
 
 function Discover(props) {
   const { className } = props;

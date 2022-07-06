@@ -1,7 +1,7 @@
 import React from 'react';
 import './GooglePay.css';
 
-import image from 'assets/img/group@2x.svg';
+import image from '../../assets/img/group@2x.svg';
 
 function GooglePay(props) {
   const { className } = props;

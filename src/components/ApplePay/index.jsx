@@ -1,6 +1,6 @@
 import React from 'react';
 import './ApplePay.css';
-import image from 'assets/img/path@2x.svg';
+import image from '../../assets/img/path@2x.svg';
 
 function ApplePay() {
   return (

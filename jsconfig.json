@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
     "target": "es2020",
-    "baseUrl": "src",
     "module": "esnext",
     "moduleResolution": "node16",
     "lib": ["dom", "dom.iterable", "scripthost", "es2020"],
