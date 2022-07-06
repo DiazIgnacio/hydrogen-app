@@ -35,8 +35,6 @@ function HomePageDesktop(props) {
     ratingProps,
   } = props;
 
-  const _image1 = require(image1);
-
   return (
     <div className='container-center-horizontal'>
       <div className='home-page-desktop screen'>
@@ -59,7 +57,7 @@ function HomePageDesktop(props) {
         </div>
         <div className='products'>
           <div className='overlap-group3'>
-            <img className='image' src={_image1} />
+            <img className='image' src={`${process.env.PUBLIC_URL}/${image1}.svg`} />
             <p className='desc inter-normal-eerie-black-16px'>{desc1}</p>
             <div className='price valign-text-middle inter-bold-black-24px'>
               {price1}
