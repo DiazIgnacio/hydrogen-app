@@ -17,12 +17,9 @@ export const homePageDesktopData = {
   desc2:
     'Lee Pucker design. Leather botinki for handsome designers. Free shipping.',
   price2: '$13.95',
-  spanText1: (
-    <React.Fragment>
+  spanText1: `
       1258 bids, 359 watchers
-      <br />
-    </React.Fragment>
-  ),
+      `,
   spanText2: '$5.95 for shipping',
   image3: '/img/image-1@2x.png',
   desc3:
@@ -33,24 +30,18 @@ export const homePageDesktopData = {
   desc4:
     'Plastic useless plugs and tubes for high-fidelity prototyping. Fit & Eat!',
   price4: '$12.48',
-  additional3: (
-    <React.Fragment>
+  additional3: `
       Wordwide shitting available
-      <br />
       Buyers protection possible!
-    </React.Fragment>
-  ),
+      `,
   image5: '/img/image-4@2x.png',
   desc5:
     'Creativity stimulating lotion. Drink every morning to generate better ideas!',
   price5: '$12.48',
-  additional4: (
-    <React.Fragment>
+  additional4: `
       Wordwide shifting available
-      <br />
       Buyers protection possible!
-    </React.Fragment>
-  ),
+      `,
   ratingProps: rating3Data,
 };
 
@@ -68,13 +59,10 @@ export const homePageMenuCloseMobileData = {
   image: '/img/image@2x.png',
   desc: 'Plastic useless plugs and tubes for high-fidelity prototyping. Fit & Eat!',
   price: '$12.48',
-  additional: (
-    <React.Fragment>
+  additional: `
       Wordwide shitting available
-      <br />
       Buyers protection possible!
-    </React.Fragment>
-  ),
+      `,
   ecommerceItemDesktopProps: ecommerceItemDesktop1Data,
 };
 
@@ -90,13 +78,10 @@ export const ecommerceItemDesktop3Data = {
   image: '/img/image-4@2x.png',
   desc: 'Creativity stimulating lotion. Drink every morning to generate better ideas!',
   price: '$12.48',
-  additional: (
-    <React.Fragment>
+  additional: `
       Wordwide shifting available
-      <br />
       Buyers protection possible!
-    </React.Fragment>
-  ),
+      `,
   className: 'ecommerce-item-desktop-3',
 };
 
@@ -126,13 +111,10 @@ export const homePageTabletData = {
   desc1:
     'Plastic useless plugs and tubes for high-fidelity prototyping. Fit & Eat!',
   price1: '$12.48',
-  additional1: (
-    <React.Fragment>
+  additional1: `
       Wordwide shitting available
-      <br />
       Buyers protection possible!
-    </React.Fragment>
-  ),
+      `,
   image2: '/img/image-3@2x.png',
   desc2:
     'Vintage Typewriter to post awesome stories about UI design and webdev.',
@@ -142,24 +124,18 @@ export const homePageTabletData = {
   desc3:
     'Lee Pucker design. Leather botinki for handsome designers. Free shipping.',
   price3: '$13.95',
-  spanText1: (
-    <React.Fragment>
+  spanText1: `
       1258 bids, 359 watchers
-      <br />
-    </React.Fragment>
-  ),
+      `,
   spanText2: '$5.95 for shipping',
   image4: '/img/image-4@2x.png',
   desc4:
     'Creativity stimulating lotion. Drink every morning to generate better ideas!',
   price4: '$12.48',
-  additional3: (
-    <React.Fragment>
+  additional3: `
       Wordwide shifting available
-      <br />
       Buyers protection possible!
-    </React.Fragment>
-  ),
+      `,
   image5: '/img/image-1@2x.png',
   desc5:
     'Timesaving kitten to save months on development. Playful, cute, cheap!',
@@ -186,13 +162,10 @@ export const productsPageTabletData = {
   desc2:
     'Creativity stimulating lotion. Drink every morning to generate better ideas!',
   price2: '$12.48',
-  additional2: (
-    <React.Fragment>
+  additional2: `
       Wordwide shifting available
-      <br />
       Buyers protection possible!
-    </React.Fragment>
-  ),
+      `,
   image3: '/img/image-7@2x.png',
   desc3: 'Professional teadrinking set for every designer and developer',
   price3: '$128.99',
@@ -201,12 +174,9 @@ export const productsPageTabletData = {
   desc4:
     'Lee Pucker design. Leather botinki for handsome designers. Free shipping.',
   price4: '$13.95',
-  spanText1: (
-    <React.Fragment>
+  spanText1: `
       1258 bids, 359 watchers
-      <br />
-    </React.Fragment>
-  ),
+      `,
   spanText2: '$5.95 for shipping',
   image5: '/img/image-17@2x.png',
   desc5: 'Prototyping items to create a lot if useless things...',
@@ -215,13 +185,10 @@ export const productsPageTabletData = {
   image6: '/img/image-15@2x.png',
   desc6: 'One string Bonsai description',
   price6: '$11.68',
-  additional5: (
-    <React.Fragment>
+  additional5: `
       Wordwide shifting available
-      <br />
       Buyers protection possible!
-    </React.Fragment>
-  ),
+      `,
   rating1Props: rating18Data,
   rating2Props: rating20Data,
 };
@@ -397,13 +364,10 @@ export const productsPageDesktopData = {
   desc2:
     'Creativity stimulating lotion. Drink every morning to generate better ideas!',
   price2: '$12.48',
-  additional2: (
-    <React.Fragment>
+  additional2: `
       Wordwide shifting available
-      <br />
       Buyers protection possible!
-    </React.Fragment>
-  ),
+      `,
   image3: '/img/image-7@2x.png',
   desc3: 'Professional teadrinking set for every designer and developer',
   price3: '$128.99',
@@ -412,12 +376,9 @@ export const productsPageDesktopData = {
   desc4:
     'Lee Pucker design. Leather botinki for handsome designers. Free shipping.',
   price4: '$13.95',
-  spanText1: (
-    <React.Fragment>
+  spanText1: `
       1258 bids, 359 watchers
-      <br />
-    </React.Fragment>
-  ),
+      `,
   spanText2: '$5.95 for shipping',
   image5: '/img/image-17@2x.png',
   desc5: 'Prototyping items to create a lot if useless things...',
@@ -426,13 +387,10 @@ export const productsPageDesktopData = {
   image6: '/img/image-15@2x.png',
   desc6: 'One string Bonsai description',
   price6: '$11.68',
-  additional5: (
-    <React.Fragment>
+  additional5: `
       Wordwide shifting available
-      <br />
       Buyers protection possible!
-    </React.Fragment>
-  ),
+      `,
   image7: '/img/image-1@2x.png',
   desc7:
     'Timesaving kitten to save months on development. Playful, cute, cheap!',
@@ -441,12 +399,9 @@ export const productsPageDesktopData = {
   image8: '/img/image-32@2x.png',
   desc8: 'John Von Ebalkin SPRING',
   price8: '$13.95',
-  spanText3: (
-    <React.Fragment>
+  spanText3: `
       1258 bids, 359 watchers
-      <br />
-    </React.Fragment>
-  ),
+      `,
   spanText4: '$5.95 for shipping',
   image9: '/img/image-28@2x.png',
   desc9: 'Simply best item in town to shine bright with your Nine Inch Nails',
@@ -456,13 +411,10 @@ export const productsPageDesktopData = {
   desc10:
     'Plastic useless plugs and tubes for high-fidelity prototyping. Fit & Eat!',
   price10: '$12.48',
-  additional8: (
-    <React.Fragment>
+  additional8: `
       Wordwide shitting available
-      <br />
       Buyers protection possible!
-    </React.Fragment>
-  ),
+      `,
   image11: '/img/image-31@2x.png',
   desc11:
     'Envelope, Stripes, Pencil and etc. Purchase this kit today and feel OKAY',
@@ -471,12 +423,9 @@ export const productsPageDesktopData = {
   image12: '/img/image-27@2x.png',
   desc12: 'KISTOCHKI & KRASIBO. Top cosmetics brand from Chelyabinsk is here!',
   price12: '$23.25',
-  spanText5: (
-    <React.Fragment>
+  spanText5: `
       1258 bids, 359 watchers
-      <br />
-    </React.Fragment>
-  ),
+      `,
   spanText6: '$5.95 for shipping',
   button2Props: button25Data,
   leftProps: left3Data,
