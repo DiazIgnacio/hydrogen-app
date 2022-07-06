@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Button from '../Button/index';
 import TextField from '../TextField/index';
 import ProductsButton from '../ProductsButton/index';
@@ -6,9 +6,12 @@ import CartButton from '../CartButton/index';
 import Rating from '../Rating/index';
 import './HomePageDesktop.css';
 
+import { homePageDesktopData } from '../../constants/index.server';
+
+import overlapGroup from `../../assets/img/${homePageDesktopData.overlapGroup}`
+
 function HomePageDesktop(props) {
   const {
-    overlapGroup,
     place,
     topProducts,
     image1,
@@ -35,12 +38,6 @@ function HomePageDesktop(props) {
     ratingProps,
   } = props;
 
-  const [_image1, setImage] = React.useState();
-
-  useEffect(() => {
-    import('./../assets/img/' + image1).then(setImage);
-  }, []);
-
   return (
     <div className='container-center-horizontal'>
       <div className='home-page-desktop screen'>
@@ -63,7 +60,7 @@ function HomePageDesktop(props) {
         </div>
         <div className='products'>
           <div className='overlap-group3'>
-            <img className='image' src={_image1} />
+            <img className='image' src={image1} />
             <p className='desc inter-normal-eerie-black-16px'>{desc1}</p>
             <div className='price valign-text-middle inter-bold-black-24px'>
               {price1}
