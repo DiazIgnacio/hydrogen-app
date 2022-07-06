@@ -3,6 +3,7 @@
   "description": "An example using JavaScript in Hydrogen",
   "version": "0.0.0",
   "license": "MIT",
+  "type": "commonjs",
   "private": true,
   "scripts": {
     "dev": "shopify hydrogen dev",
