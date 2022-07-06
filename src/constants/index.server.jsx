@@ -5,15 +5,15 @@ export const rating3Data = {
 };
 
 export const homePageDesktopData = {
-  overlapGroup: 'assets/img/rectangle-1@1x.png',
+  overlapGroup: '../../assets/img/rectangle-1@1x.png',
   place: 'WELCOME',
   topProducts: 'Top Products',
-  image1: 'assets/img/image-3@2x.png',
+  image1: '../../assets/img/image-3@2x.png',
   desc1:
     'Vintage Typewriter to post awesome stories about UI design and webdev.',
   price1: '$49.50',
   additional1: 'Eligible for Shipping To Mars or somewhere else',
-  image2: 'assets/img/image-2@2x.png',
+  image2: '../../assets/img/image-2@2x.png',
   desc2:
     'Lee Pucker design. Leather botinki for handsome designers. Free shipping.',
   price2: '$13.95',
@@ -21,12 +21,12 @@ export const homePageDesktopData = {
       1258 bids, 359 watchers
       `,
   spanText2: '$5.95 for shipping',
-  image3: 'assets/img/image-1@2x.png',
+  image3: '../../assets/img/image-1@2x.png',
   desc3:
     'Timesaving kitten to save months on development. Playful, cute, cheap!',
   price3: '$128.99',
   additional2: 'Eligible for nothing :(',
-  image4: 'assets/img/image@2x.png',
+  image4: '../../assets/img/image@2x.png',
   desc4:
     'Plastic useless plugs and tubes for high-fidelity prototyping. Fit & Eat!',
   price4: '$12.48',
@@ -34,7 +34,7 @@ export const homePageDesktopData = {
       Wordwide shitting available
       Buyers protection possible!
       `,
-  image5: 'assets/img/image-4@2x.png',
+  image5: '../../assets/img/image-4@2x.png',
   desc5:
     'Creativity stimulating lotion. Drink every morning to generate better ideas!',
   price5: '$12.48',
@@ -46,17 +46,17 @@ export const homePageDesktopData = {
 };
 
 export const ecommerceItemDesktop1Data = {
-  image: 'assets/img/image-3@2x.png',
+  image: '../../assets/img/image-3@2x.png',
   desc: 'Vintage Typewriter to post awesome stories about UI design and webdev.',
   price: '$49.50',
   additional: 'Eligible for Shipping To Mars or somewhere else',
 };
 
 export const homePageMenuCloseMobileData = {
-  heroBg: 'assets/img/rectangle-1-1@2x.png',
+  heroBg: '../../assets/img/rectangle-1-1@2x.png',
   place: 'WELCOME',
   topProducts: 'Top Products',
-  image: 'assets/img/image@2x.png',
+  image: '../../assets/img/image@2x.png',
   desc: 'Plastic useless plugs and tubes for high-fidelity prototyping. Fit & Eat!',
   price: '$12.48',
   additional: `
@@ -67,7 +67,7 @@ export const homePageMenuCloseMobileData = {
 };
 
 export const ecommerceItemDesktop2Data = {
-  image: 'assets/img/image-3@2x.png',
+  image: '../../assets/img/image-3@2x.png',
   desc: 'Vintage Typewriter to post awesome stories about UI design and webdev.',
   price: '$49.50',
   additional: 'Eligible for Shipping To Mars or somewhere else',
@@ -75,7 +75,7 @@ export const ecommerceItemDesktop2Data = {
 };
 
 export const ecommerceItemDesktop3Data = {
-  image: 'assets/img/image-4@2x.png',
+  image: '../../assets/img/image-4@2x.png',
   desc: 'Creativity stimulating lotion. Drink every morning to generate better ideas!',
   price: '$12.48',
   additional: `
@@ -90,7 +90,7 @@ export const rating10Data = {
 };
 
 export const productsPageMobileData = {
-  image: 'assets/img/image-7@2x.png',
+  image: '../../assets/img/image-7@2x.png',
   desc: 'Professional teadrinking set for every designer and developer',
   price: '$128.99',
   additional: 'Eligible for nothing :(',
@@ -104,10 +104,10 @@ export const rating15Data = {
 };
 
 export const homePageTabletData = {
-  overlapGroup: 'assets/img/rectangle-1-2@1x.png',
+  overlapGroup: '../../assets/img/rectangle-1-2@1x.png',
   place: 'WELCOME',
   topProducts: 'Top Products',
-  image1: 'assets/img/image@2x.png',
+  image1: '../../assets/img/image@2x.png',
   desc1:
     'Plastic useless plugs and tubes for high-fidelity prototyping. Fit & Eat!',
   price1: '$12.48',
@@ -115,12 +115,12 @@ export const homePageTabletData = {
       Wordwide shitting available
       Buyers protection possible!
       `,
-  image2: 'assets/img/image-3@2x.png',
+  image2: '../../assets/img/image-3@2x.png',
   desc2:
     'Vintage Typewriter to post awesome stories about UI design and webdev.',
   price2: '$49.50',
   additional2: 'Eligible for Shipping To Mars or somewhere else',
-  image3: 'assets/img/image-2@2x.png',
+  image3: '../../assets/img/image-2@2x.png',
   desc3:
     'Lee Pucker design. Leather botinki for handsome designers. Free shipping.',
   price3: '$13.95',
@@ -128,7 +128,7 @@ export const homePageTabletData = {
       1258 bids, 359 watchers
       `,
   spanText2: '$5.95 for shipping',
-  image4: 'assets/img/image-4@2x.png',
+  image4: '../../assets/img/image-4@2x.png',
   desc4:
     'Creativity stimulating lotion. Drink every morning to generate better ideas!',
   price4: '$12.48',
@@ -136,7 +136,7 @@ export const homePageTabletData = {
       Wordwide shifting available
       Buyers protection possible!
       `,
-  image5: 'assets/img/image-1@2x.png',
+  image5: '../../assets/img/image-1@2x.png',
   desc5:
     'Timesaving kitten to save months on development. Playful, cute, cheap!',
   price5: '$128.99',
@@ -153,12 +153,12 @@ export const rating20Data = {
 };
 
 export const productsPageTabletData = {
-  image1: 'assets/img/image-3@2x.png',
+  image1: '../../assets/img/image-3@2x.png',
   desc1:
     'Vintage Typewriter to post awesome stories about UI design and webdev.',
   price1: '$49.50',
   additional1: 'Eligible for Shipping To Mars or somewhere else',
-  image2: 'assets/img/image-4@2x.png',
+  image2: '../../assets/img/image-4@2x.png',
   desc2:
     'Creativity stimulating lotion. Drink every morning to generate better ideas!',
   price2: '$12.48',
@@ -166,11 +166,11 @@ export const productsPageTabletData = {
       Wordwide shifting available
       Buyers protection possible!
       `,
-  image3: 'assets/img/image-7@2x.png',
+  image3: '../../assets/img/image-7@2x.png',
   desc3: 'Professional teadrinking set for every designer and developer',
   price3: '$128.99',
   additional3: 'Eligible for nothing :(',
-  image4: 'assets/img/image-2@2x.png',
+  image4: '../../assets/img/image-2@2x.png',
   desc4:
     'Lee Pucker design. Leather botinki for handsome designers. Free shipping.',
   price4: '$13.95',
@@ -178,11 +178,11 @@ export const productsPageTabletData = {
       1258 bids, 359 watchers
       `,
   spanText2: '$5.95 for shipping',
-  image5: 'assets/img/image-17@2x.png',
+  image5: '../../assets/img/image-17@2x.png',
   desc5: 'Prototyping items to create a lot if useless things...',
   price5: '$128.99',
   additional4: 'Showcasing onHovered state',
-  image6: 'assets/img/image-15@2x.png',
+  image6: '../../assets/img/image-15@2x.png',
   desc6: 'One string Bonsai description',
   price6: '$11.68',
   additional5: `
@@ -203,17 +203,17 @@ export const googlePay2Data = {
 
 export const cartPageTabletData = {
   myCart: 'My Cart',
-  image1: 'assets/img/image-23@2x.png',
+  image1: '../../assets/img/image-23@2x.png',
   desc1:
     'Timesaving kitten to save months on development. Playful, cute, cheap!',
   quantity1: '2',
   price1: '$128.99',
-  image2: 'assets/img/image-22@2x.png',
+  image2: '../../assets/img/image-22@2x.png',
   desc2:
     'Plastic useless plugs and tubes for high-fidelity prototyping. Fit & Eat!',
   quantity2: '2',
   price2: '$12.48',
-  image3: 'assets/img/image-21@2x.png',
+  image3: '../../assets/img/image-21@2x.png',
   desc3:
     'Creativity stimulating lotion. Drink every morning to generate better ideas!',
   quantity3: '2',
@@ -294,17 +294,17 @@ export const payButton2Data = {
 
 export const cartPageDesktopData = {
   myCart: 'My Cart',
-  image1: 'assets/img/image-26@2x.png',
+  image1: '../../assets/img/image-26@2x.png',
   desc1:
     'Timesaving kitten to save months on development. Playful, cute, cheap!',
   quantity1: '2',
   price1: '$128.99',
-  image2: 'assets/img/image-22@2x.png',
+  image2: '../../assets/img/image-22@2x.png',
   desc2:
     'Plastic useless plugs and tubes for high-fidelity prototyping. Fit & Eat!',
   quantity2: '2',
   price2: '$12.48',
-  image3: 'assets/img/image-24@2x.png',
+  image3: '../../assets/img/image-24@2x.png',
   desc3:
     'Creativity stimulating lotion. Drink every morning to generate better ideas!',
   quantity3: '2',
@@ -355,12 +355,12 @@ export const rating33Data = {
 };
 
 export const productsPageDesktopData = {
-  image1: 'assets/img/image-3@2x.png',
+  image1: '../../assets/img/image-3@2x.png',
   desc1:
     'Vintage Typewriter to post awesome stories about UI design and webdev.',
   price1: '$49.50',
   additional1: 'Eligible for Shipping To Mars or somewhere else',
-  image2: 'assets/img/image-4@2x.png',
+  image2: '../../assets/img/image-4@2x.png',
   desc2:
     'Creativity stimulating lotion. Drink every morning to generate better ideas!',
   price2: '$12.48',
@@ -368,11 +368,11 @@ export const productsPageDesktopData = {
       Wordwide shifting available
       Buyers protection possible!
       `,
-  image3: 'assets/img/image-7@2x.png',
+  image3: '../../assets/img/image-7@2x.png',
   desc3: 'Professional teadrinking set for every designer and developer',
   price3: '$128.99',
   additional3: 'Eligible for nothing :(',
-  image4: 'assets/img/image-2@2x.png',
+  image4: '../../assets/img/image-2@2x.png',
   desc4:
     'Lee Pucker design. Leather botinki for handsome designers. Free shipping.',
   price4: '$13.95',
@@ -380,34 +380,34 @@ export const productsPageDesktopData = {
       1258 bids, 359 watchers
       `,
   spanText2: '$5.95 for shipping',
-  image5: 'assets/img/image-17@2x.png',
+  image5: '../../assets/img/image-17@2x.png',
   desc5: 'Prototyping items to create a lot if useless things...',
   price5: '$128.99',
   additional4: 'Showcasing onHovered state',
-  image6: 'assets/img/image-15@2x.png',
+  image6: '../../assets/img/image-15@2x.png',
   desc6: 'One string Bonsai description',
   price6: '$11.68',
   additional5: `
       Wordwide shifting available
       Buyers protection possible!
       `,
-  image7: 'assets/img/image-1@2x.png',
+  image7: '../../assets/img/image-1@2x.png',
   desc7:
     'Timesaving kitten to save months on development. Playful, cute, cheap!',
   price7: '$128.99',
   additional6: 'Eligible for nothing :(',
-  image8: 'assets/img/image-32@2x.png',
+  image8: '../../assets/img/image-32@2x.png',
   desc8: 'John Von Ebalkin SPRING',
   price8: '$13.95',
   spanText3: `
       1258 bids, 359 watchers
       `,
   spanText4: '$5.95 for shipping',
-  image9: 'assets/img/image-28@2x.png',
+  image9: '../../assets/img/image-28@2x.png',
   desc9: 'Simply best item in town to shine bright with your Nine Inch Nails',
   price9: '$1.25',
   additional7: 'Eligible for Shipping To Mars or somewhere else',
-  image10: 'assets/img/image@2x.png',
+  image10: '../../assets/img/image@2x.png',
   desc10:
     'Plastic useless plugs and tubes for high-fidelity prototyping. Fit & Eat!',
   price10: '$12.48',
@@ -415,12 +415,12 @@ export const productsPageDesktopData = {
       Wordwide shitting available
       Buyers protection possible!
       `,
-  image11: 'assets/img/image-31@2x.png',
+  image11: '../../assets/img/image-31@2x.png',
   desc11:
     'Envelope, Stripes, Pencil and etc. Purchase this kit today and feel OKAY',
   price11: '$9.50',
   additional9: 'Eligible for Shipping To Mars or somewhere else',
-  image12: 'assets/img/image-27@2x.png',
+  image12: '../../assets/img/image-27@2x.png',
   desc12: 'KISTOCHKI & KRASIBO. Top cosmetics brand from Chelyabinsk is here!',
   price12: '$23.25',
   spanText5: `

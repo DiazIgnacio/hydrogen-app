@@ -32,7 +32,8 @@
     "magic-string": "^0.26.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.3.0"
+    "react-router-dom": "^6.3.0",
+    "vite-plugin-require": "^1.0.1"
   },
   "author": "Diaz"
 }
