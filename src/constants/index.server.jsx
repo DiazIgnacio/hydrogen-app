@@ -1,9 +1,9 @@
 import React from 'react';
 
-import homePageImage1 from '../../assets/img/image-3@2x.png';
-import homePageImage2 from '../../assets/img/image-2@2x.png';
-import homePageImage3 from '../../assets/img/image-1@2x.png';
-import homePageImage4 from '../../assets/img/image@2x.png';
+import homePageImage1 from '../assets/img/image-3@2x.png';
+import homePageImage2 from '../assets/img/image-2@2x.png';
+import homePageImage3 from '../assets/img/image-1@2x.png';
+import homePageImage4 from '../assets/img/image@2x.png';
 
 export const rating3Data = {
   className: 'rating-8',
