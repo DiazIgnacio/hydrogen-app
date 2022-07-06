@@ -4,7 +4,6 @@
   "version": "0.0.0",
   "license": "MIT",
   "private": true,
-  "type": "module",
   "scripts": {
     "dev": "shopify hydrogen dev",
     "preview": "shopify hydrogen preview",
