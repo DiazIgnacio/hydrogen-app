@@ -1,10 +1,5 @@
 import React from 'react';
 
-import homePageImage1 from '../assets/img/image-3@2x.png';
-import homePageImage2 from '../assets/img/image-2@2x.png';
-import homePageImage3 from '../assets/img/image-1@2x.png';
-import homePageImage4 from '../assets/img/image@2x.png';
-
 export const rating3Data = {
   className: 'rating-8',
 };
@@ -13,12 +8,12 @@ export const homePageDesktopData = {
   overlapGroup: 'rectangle-1@1x.png',
   place: 'WELCOME',
   topProducts: 'Top Products',
-  image1: homePageImage1,
+  image1: 'image-3@2x.png',
   desc1:
     'Vintage Typewriter to post awesome stories about UI design and webdev.',
   price1: '$49.50',
   additional1: 'Eligible for Shipping To Mars or somewhere else',
-  image2: homePageImage2,
+  image2: 'image-2@2x.png',
   desc2:
     'Lee Pucker design. Leather botinki for handsome designers. Free shipping.',
   price2: '$13.95',
@@ -26,12 +21,12 @@ export const homePageDesktopData = {
       1258 bids, 359 watchers
       `,
   spanText2: '$5.95 for shipping',
-  image3: homePageImage3,
+  image3: 'image-1@2x.png',
   desc3:
     'Timesaving kitten to save months on development. Playful, cute, cheap!',
   price3: '$128.99',
   additional2: 'Eligible for nothing :(',
-  image4: homePageImage4,
+  image4: 'image@2x.png',
   desc4:
     'Plastic useless plugs and tubes for high-fidelity prototyping. Fit & Eat!',
   price4: '$12.48',

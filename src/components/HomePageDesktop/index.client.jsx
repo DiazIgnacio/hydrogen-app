@@ -7,29 +7,29 @@ import Rating from '../Rating/index';
 import './HomePageDesktop.css';
 
 import overlapGroup from '../../assets/img/rectangle-1@1x.png';
+import image1 from '../../assets/img/image-3@2x.png';
+import image2 from '../../assets/img/image-2@2x.png';
+import image3 from '../../assets/img/image-1@2x.png';
+import image4 from '../../assets/img/image@2x.png';
+import image5 from '../../assets/img/image-4@2x.png';
 
 function HomePageDesktop(props) {
   const {
     place,
     topProducts,
-    image1,
     desc1,
     price1,
     additional1,
-    image2,
     desc2,
     price2,
     spanText1,
     spanText2,
-    image3,
     desc3,
     price3,
     additional2,
-    image4,
     desc4,
     price4,
     additional3,
-    image5,
     desc5,
     price5,
     additional4,
