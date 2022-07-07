@@ -7,11 +7,6 @@ import Rating from '../Rating/index'
 import './HomePageDesktop.css'
 
 import overlapGroup from '../../assets/img/rectangle-1@1x.png'
-import image1 from '../../assets/img/image-3@2x.png'
-import image2 from '../../assets/img/image-2@2x.png'
-import image3 from '../../assets/img/image-1@2x.png'
-import image4 from '../../assets/img/image@2x.png'
-import image5 from '../../assets/img/image-4@2x.png'
 
 function HomePageDesktop(props) {
   const { place, topProducts, ratingProps, products } = props
@@ -43,7 +38,7 @@ function HomePageDesktop(props) {
               {products[0].title}
             </p>
             <div className="price valign-text-middle inter-bold-black-24px">
-              {products[0].price}
+              $ {products[0].price}
             </div>
             <p className="additional valign-text-middle inter-normal-topaz-14px">
               {products[0].description}
@@ -57,7 +52,7 @@ function HomePageDesktop(props) {
               {products[1].title}
             </p>
             <div className="price-1 valign-text-middle inter-bold-black-24px">
-              {products[1].price}
+              $ {products[1].price}
             </div>
             <p className="additional-1 valign-text-middle inter-normal-topaz-14px">
               <span>
@@ -75,7 +70,7 @@ function HomePageDesktop(props) {
               {products[2].title}
             </p>
             <div className="price valign-text-middle inter-bold-black-24px">
-              {products[2].price}
+              $ {products[2].price}
             </div>
             <div className="additional-2 valign-text-middle inter-normal-topaz-14px">
               {products[2].description}
@@ -89,7 +84,7 @@ function HomePageDesktop(props) {
               {products[3].title}
             </p>
             <div className="price-1 valign-text-middle inter-bold-black-24px">
-              {products[3].price}
+              $ {products[3].price}
             </div>
             <p className="additional-3 valign-text-middle inter-normal-topaz-14px">
               {products[3].description}
@@ -103,7 +98,7 @@ function HomePageDesktop(props) {
               {products[4].title}
             </p>
             <div className="price valign-text-middle inter-bold-black-24px">
-              {products[4].price}
+              $ {products[4].price}
             </div>
             <p className="additional valign-text-middle inter-normal-topaz-14px">
               {products[4].description}
