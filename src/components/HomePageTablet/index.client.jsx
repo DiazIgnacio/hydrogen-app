@@ -5,6 +5,11 @@ import CartButton2 from '../CartButton2/index'
 import Rating from '../Rating/index'
 import './HomePageTablet.css'
 
+import {
+  AddToCartButton,
+  ProductOptionsProvider
+} from '@shopify/hydrogen/client'
+
 import overlapGroup from '../../assets/img/rectangle-1@1x.png'
 
 function HomePageTablet(props) {
@@ -29,19 +34,29 @@ function HomePageTablet(props) {
         <div className="top-products-2 valign-text-middle">{topProducts}</div>
         <div className="products-1">
           <div className="overlap-group-container">
-            <div className="overlap-group-7">
-              <img className="image-8" src={products[0].imageSrc} />
-              <p className="desc-6 inter-normal-eerie-black-16px">
-                {products[0].title}
-              </p>
-              <div className="price-6 valign-text-middle inter-bold-black-24px">
-                {products[0].price}
+            <ProductOptionsProvider data={products[0]}>
+              <div className="overlap-group-7">
+                <img className="image-8" src={products[0].imageSrc} />
+                <p className="desc-6 inter-normal-eerie-black-16px">
+                  {products[0].title}
+                </p>
+                <div className="price-6 valign-text-middle inter-bold-black-24px">
+                  {products[0].price}
+                </div>
+                <p className="additional-9 valign-text-middle inter-normal-topaz-14px">
+                  {products[0].description}
+                </p>
+                <AddToCartButton
+                  variantId={products[0].variantId}
+                  quantity={1}
+                  attributes={[{ key: 'Engraving', value: 'Hello world' }]}
+                  accessibleAddingToCartLabel="Adding item to your cart"
+                >
+                  Add to Cart
+                </AddToCartButton>
+                <Rating />
               </div>
-              <p className="additional-9 valign-text-middle inter-normal-topaz-14px">
-                {products[0].description}
-              </p>
-              <Rating />
-            </div>
+            </ProductOptionsProvider>
             <div className="overlap-group3-1">
               <img className="image-7" src={products[1].imageSrc} />
               <p className="desc-7 inter-normal-eerie-black-16px">

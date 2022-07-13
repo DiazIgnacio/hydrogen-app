@@ -27,6 +27,13 @@ const queryString = gql`
               src
             }
           }
+          variants(first: 1) {
+            edges {
+              node {
+                id
+              }
+            }
+          }
         }
       }
     }
@@ -44,7 +51,8 @@ export default function Home() {
       title,
       description,
       price: priceRange.maxVariantPrice.amount,
-      imageSrc: images.nodes[0].src
+      imageSrc: images.nodes[0].src,
+      variantId: node.variants.edges[0].node.id
     }
   })
 
