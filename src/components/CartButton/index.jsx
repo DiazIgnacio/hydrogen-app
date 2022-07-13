@@ -8,7 +8,7 @@ import "./CartButton.css";
 
 function CartButton() {
   return (
-    <Link to="/cart-page-desktop">
+    <Link to="/cart-page">
       <div className="cart-button">
         <MuiMaterial.Button
           endIcon=""

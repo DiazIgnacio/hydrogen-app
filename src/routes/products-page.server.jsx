@@ -1,7 +1,15 @@
 import ProductsPageDesktop from '../components/ProductsPageDesktop/index.client'
-import { productsPageDesktopData } from '../constants/index.server'
+import {
+  ecommerceItemDesktop1Data,
+  ecommerceItemDesktop2Data,
+  productsPageDesktopData,
+  productsPageMobileData,
+  productsPageTabletData
+} from '../constants/index.server'
 
 import { useShopQuery, gql } from '@shopify/hydrogen'
+import ProductsPageTablet from '../components/ProductsPageTablet/index.client'
+import ProductsPageMobile from '../components/ProductsPageMobile/index.client'
 
 const queryString = gql`
   {
@@ -43,6 +51,16 @@ export default function ProductsPage() {
   })
 
   return (
-    <ProductsPageDesktop {...productsPageDesktopData} products={products} />
+    <>
+      <div className="hidden 2xl:block">
+        <ProductsPageDesktop {...productsPageDesktopData} products={products} />
+      </div>
+      <div className="hidden lg:block 2xl:hidden">
+        <ProductsPageTablet {...productsPageTabletData} products={products} />
+      </div>
+      <div className="lg:hidden">
+        <ProductsPageMobile {...productsPageMobileData} products={products} />
+      </div>
+    </>
   )
 }

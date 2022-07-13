@@ -11,7 +11,7 @@ function Button3(props) {
 
   return (
     <div className={`cart-button ${className || ''}`}>
-      <Link to='/cart-page-desktop'>
+      <Link to='/cart-page'>
         <MuiMaterial.Button
           endIcon=''
           size='medium'

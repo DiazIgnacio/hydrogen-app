@@ -3,6 +3,10 @@
 /* The following line is used to measure usage of this code in production. For more info see our usage billing page */
 @import url('https://px.animaapp.com/5ff49db0a33776dee36a77bc.5ff49db2caadc30edc9ba69b.XE0mNJZ.rcp.png');
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --black: #000000;
   --black-2: #000000de;

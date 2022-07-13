@@ -1,8 +1,13 @@
 import React from 'react'
 import HomePageDesktop from '../components/HomePageDesktop/index.client'
-import { homePageDesktopData } from '../constants/index.server'
+import {
+  homePageDesktopData,
+  homePageTabletData
+} from '../constants/index.server'
 
 import { useShopQuery, gql } from '@shopify/hydrogen'
+import HomePageTablet from '../components/HomePageTablet/index.client'
+import HomePageMenuCloseMobile from '../components/HomePageMenuCloseMobile/index.client'
 
 const queryString = gql`
   {
@@ -43,5 +48,20 @@ export default function Home() {
     }
   })
 
-  return <HomePageDesktop {...homePageDesktopData} products={products} />
+  return (
+    <>
+      <div className="hidden 2xl:block">
+        <HomePageDesktop {...homePageDesktopData} products={products} />
+      </div>
+      <div className="hidden lg:block 2xl:hidden">
+        <HomePageTablet {...homePageTabletData} products={products} />
+      </div>
+      <div className="lg:hidden">
+        <HomePageMenuCloseMobile
+          {...HomePageMenuCloseMobile}
+          products={products}
+        />
+      </div>
+    </>
+  )
 }
