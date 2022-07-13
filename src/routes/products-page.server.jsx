@@ -1,7 +1,5 @@
 import ProductsPageDesktop from '../components/ProductsPageDesktop/index.client'
 import {
-  ecommerceItemDesktop1Data,
-  ecommerceItemDesktop2Data,
   productsPageDesktopData,
   productsPageMobileData,
   productsPageTabletData

@@ -1,14 +1,14 @@
-import React, { useEffect } from "react";
-import { Link } from "@shopify/hydrogen";
-import * as MuiMaterial from "@mui/material";
-import * as EmotionReact from "@emotion/react";
-import * as EmotionStyled from "@emotion/styled";
-import * as MuiIconsMaterial from "@mui/icons-material";
-import "./ProductsButton4.css";
+import React, { useEffect } from 'react'
+import { Link } from '@shopify/hydrogen'
+import * as MuiMaterial from '@mui/material'
+import * as EmotionReact from '@emotion/react'
+import * as EmotionStyled from '@emotion/styled'
+import * as MuiIconsMaterial from '@mui/icons-material'
+import './ProductsButton4.css'
 
 function ProductsButton4() {
   return (
-    <Link to="/products-page-mobile">
+    <Link to="/products-page">
       <div className="products-button">
         <MuiMaterial.Button
           endIcon=""
@@ -23,7 +23,7 @@ function ProductsButton4() {
         </MuiMaterial.Button>
       </div>
     </Link>
-  );
+  )
 }
 
-export default ProductsButton4;
+export default ProductsButton4
