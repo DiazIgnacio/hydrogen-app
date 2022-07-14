@@ -6,21 +6,37 @@ import Rating from '../Rating/index'
 import Left from '../Left/index'
 import './ProductsPageTablet.css'
 
+import {
+  AddToCartButton,
+  ProductOptionsProvider
+} from '@shopify/hydrogen/client'
+
 function ProductsPageTablet(props) {
   const { products } = props
 
-  const Product = ({ imageSrc, title, price, description }) => (
-    <>
-      <img className="image-10" src={imageSrc} />
-      <p className="desc-8 inter-normal-eerie-black-16px">{title}</p>
+  const Product = product => (
+    <ProductOptionsProvider data={product}>
+      <img className="image-10" src={product.imageSrc} />
+      <p className="desc-8 inter-normal-eerie-black-16px">{product.title}</p>
       <div className="price-8 valign-text-middle inter-bold-black-24px">
-        {price}
+        {product.price}
       </div>
       <p className="additional-12 valign-text-middle inter-normal-topaz-14px">
-        {description}
+        {product.description}
       </p>
+      <AddToCart product={product} />
       <Rating />
-    </>
+    </ProductOptionsProvider>
+  )
+
+  const AddToCart = ({ product }) => (
+    <AddToCartButton
+      variantId={product.variantId}
+      quantity={1}
+      accessibleAddingToCartLabel="Adding item to your cart"
+    >
+      Add to Cart
+    </AddToCartButton>
   )
 
   return (
