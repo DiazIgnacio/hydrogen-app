@@ -34,7 +34,6 @@ function CartPageDesktop(props) {
   } = props
 
   const { lines, cost, checkoutUrl } = useCart()
-  lines ? console.log(lines) : console.log('no lines')
 
   const ProductCard = ({ merchandise, quantity, cost }) => {
     return (
