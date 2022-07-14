@@ -14,6 +14,7 @@ const queryString = gql`
     products(first: 100) {
       edges {
         node {
+          id
           description
           priceRange {
             maxVariantPrice {
@@ -57,19 +58,27 @@ export default function Home() {
   })
 
   return (
-    <>
-      <div className="hidden 2xl:block">
-        <HomePageDesktop {...homePageDesktopData} products={products} />
-      </div>
-      <div className="hidden lg:block 2xl:hidden">
-        <HomePageTablet {...homePageTabletData} products={products} />
-      </div>
-      <div className="lg:hidden">
-        <HomePageMenuCloseMobile
-          {...HomePageMenuCloseMobile}
-          products={products}
-        />
-      </div>
-    </>
+    products && (
+      <>
+        <div className="hidden 2xl:block">
+          <HomePageDesktop
+            {...homePageDesktopData}
+            products={products.slice(0, 5)}
+          />
+        </div>
+        <div className="hidden lg:block 2xl:hidden">
+          <HomePageTablet
+            {...homePageTabletData}
+            products={products.slice(0, 5)}
+          />
+        </div>
+        <div className="lg:hidden">
+          <HomePageMenuCloseMobile
+            {...HomePageMenuCloseMobile}
+            products={products}
+          />
+        </div>
+      </>
+    )
   )
 }

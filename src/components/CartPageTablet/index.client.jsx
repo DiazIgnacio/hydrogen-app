@@ -14,6 +14,8 @@ import Maestro from '../Maestro/index'
 import Discover from '../Discover/index'
 import PayButton from '../PayButton/index'
 
+import { useCart } from '@shopify/hydrogen/client'
+
 import imageMasterCard from '../../assets/img/mastercard@2x.svg'
 
 import './CartPageTablet.css'
@@ -38,6 +40,36 @@ function CartPageTablet(props) {
     googlePayProps
   } = props
 
+  const { totalQuantity, lines, cost } = useCart()
+  lines ? console.log(lines) : console.log('no lines')
+  cost && console.log(cost)
+
+  const ProductCard = ({ merchandise, quantity, cost }) => {
+    return (
+      <div className="ecommerce-item">
+        <div className="flex-col-1">
+          <div className="flex-row-1">
+            <img className="image-14" src={merchandise.image.url} />
+            <div className="desc-10 inter-normal-eerie-black-20px">
+              {merchandise.product.title}
+            </div>
+          </div>
+          <div className="flex-row">
+            <AddButton3 />
+            <div className="quantity valign-text-middle poppins-normal-black-38px">
+              {quantity}
+            </div>
+            <SubstractButton3 />
+            <RemoveButton3 />
+            <div className="price-10 valign-text-middle inter-bold-black-24px">
+              {`${cost.totalAmount.amount} ${cost.totalAmount.currencyCode}`}
+            </div>
+          </div>
+        </div>
+      </div>
+    )
+  }
+
   return (
     <div className="container-center-horizontal">
       <div className="cart-page-tablet screen">
@@ -49,68 +81,19 @@ function CartPageTablet(props) {
         <div className="my-cart valign-text-middle poppins-medium-black-72px">
           {myCart}
         </div>
-        <div className="ecommerce-item">
-          <div className="flex-col-1">
-            <div className="flex-row-1">
-              <img className="image-14" src={image1} />
-              <div className="desc-10 inter-normal-eerie-black-20px">
-                {desc1}
-              </div>
-            </div>
-            <div className="flex-row">
-              <AddButton3 />
-              <div className="quantity valign-text-middle poppins-normal-black-38px">
-                {quantity1}
-              </div>
-              <SubstractButton3 />
-              <RemoveButton3 />
-              <div className="price-10 valign-text-middle inter-bold-black-24px">
-                {price1}
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="ecommerce-item-1">
-          <div className="flex-row-2">
-            <img className="image-13" src={image2} />
-            <div className="desc-11 inter-normal-eerie-black-20px">{desc2}</div>
-          </div>
-          <div className="flex-row-3">
-            <AddButton3 />
-            <div className="quantity valign-text-middle poppins-normal-black-38px">
-              {quantity2}
-            </div>
-            <SubstractButton3 />
-            <RemoveButton3 />
-            <div className="price-11 valign-text-middle inter-bold-black-24px">
-              {price2}
-            </div>
-          </div>
-        </div>
-        <div className="ecommerce-item-2">
-          <div className="flex-col-2">
-            <div className="flex-row-4">
-              <img className="image-13" src={image3} />
-              <div className="desc-12 inter-normal-eerie-black-20px">
-                {desc3}
-              </div>
-            </div>
-            <div className="flex-row">
-              <AddButton3 />
-              <div className="quantity valign-text-middle poppins-normal-black-38px">
-                {quantity3}
-              </div>
-              <SubstractButton3 />
-              <RemoveButton3 className={removeButton3Props.className} />
-              <div className="price-12 valign-text-middle inter-bold-black-24px">
-                {price3}
-              </div>
-            </div>
-          </div>
-        </div>
+        {lines !== [] &&
+          lines.map(({ cost, merchandise, quantity, id }) => (
+            <ProductCard
+              key={id}
+              cost={cost}
+              merchandise={merchandise}
+              quantity={quantity}
+            />
+          ))}
         <div className="total-card">
-          <div className="total-35699 valign-text-middle poppins-medium-black-26px">
-            {total35699}
+          <div className="total-35699 valign-text-middle poppins-medium-black-26px pb-3">
+            {cost &&
+              `${cost.totalAmount.amount} ${cost.totalAmount.currencyCode}`}
           </div>
         </div>
         <div className="flex-row-5">

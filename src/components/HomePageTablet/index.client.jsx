@@ -15,6 +15,16 @@ import overlapGroup from '../../assets/img/rectangle-1@1x.png'
 function HomePageTablet(props) {
   const { place, topProducts, ratingProps, products } = props
 
+  const AddToCart = ({ product }) => (
+    <AddToCartButton
+      variantId={product.variantId}
+      quantity={1}
+      accessibleAddingToCartLabel="Adding item to your cart"
+    >
+      Add to Cart
+    </AddToCartButton>
+  )
+
   return (
     <div className="container-center-horizontal">
       <div className="home-page-tablet screen">
@@ -46,72 +56,77 @@ function HomePageTablet(props) {
                 <p className="additional-9 valign-text-middle inter-normal-topaz-14px">
                   {products[0].description}
                 </p>
-                <AddToCartButton
-                  variantId={products[0].variantId}
-                  quantity={1}
-                  attributes={[{ key: 'Engraving', value: 'Hello world' }]}
-                  accessibleAddingToCartLabel="Adding item to your cart"
-                >
-                  Add to Cart
-                </AddToCartButton>
+                <AddToCart product={products[0]} />
                 <Rating />
               </div>
             </ProductOptionsProvider>
-            <div className="overlap-group3-1">
-              <img className="image-7" src={products[1].imageSrc} />
-              <p className="desc-7 inter-normal-eerie-black-16px">
-                {products[1].title}
-              </p>
-              <div className="price-7 valign-text-middle inter-bold-black-24px">
-                {products[1].price}
+            <ProductOptionsProvider data={products[1]}>
+              <div className="overlap-group3-1">
+                <img className="image-7" src={products[1].imageSrc} />
+                <p className="desc-7 inter-normal-eerie-black-16px">
+                  {products[1].title}
+                </p>
+                <div className="price-7 valign-text-middle inter-bold-black-24px">
+                  {products[1].price}
+                </div>
+                <p className="additional-8 valign-text-middle inter-normal-topaz-14px">
+                  {products[1].description}
+                </p>
+                <AddToCart product={products[1]} />
+                <Rating />
               </div>
-              <p className="additional-8 valign-text-middle inter-normal-topaz-14px">
-                {products[1].description}
-              </p>
-              <Rating />
-            </div>
+            </ProductOptionsProvider>
           </div>
           <div className="overlap-group-container-1">
-            <div className="overlap-group2-2">
-              <img className="image-9" src={products[2].imageSrc} />
-              <p className="desc-6 inter-normal-eerie-black-16px">
-                {products[2].title}
-              </p>
-              <div className="price-6 valign-text-middle inter-bold-black-24px">
-                {products[2].price}
+            <ProductOptionsProvider data={products[2]}>
+              <div className="overlap-group2-2">
+                <img className="image-9" src={products[2].imageSrc} />
+                <p className="desc-6 inter-normal-eerie-black-16px">
+                  {products[2].title}
+                </p>
+                <div className="price-6 valign-text-middle inter-bold-black-24px">
+                  {products[2].price}
+                </div>
+                <p className="additional-10 valign-text-middle inter-normal-topaz-14px">
+                  {products[2].description}
+                </p>
+                <AddToCart product={products[2]} />
+                <Rating />
               </div>
-              <p className="additional-10 valign-text-middle inter-normal-topaz-14px">
-                {products[2].description}
-              </p>
-              <Rating />
-            </div>
-            <div className="overlap-group4">
-              <img className="image-7" src={products[3].imageSrc} />
+            </ProductOptionsProvider>
+            <ProductOptionsProvider data={products[3]}>
+              <div className="overlap-group4">
+                <img className="image-7" src={products[3].imageSrc} />
+                <p className="desc-7 inter-normal-eerie-black-16px">
+                  {products[3].title}
+                </p>
+                <div className="price-7 valign-text-middle inter-bold-black-24px">
+                  {products[3].price}
+                </div>
+                <p className="additional-8 valign-text-middle inter-normal-topaz-14px">
+                  {products[3].description}
+                </p>
+                <AddToCart product={products[3]} />
+                <Rating />
+              </div>
+            </ProductOptionsProvider>
+          </div>
+          <ProductOptionsProvider data={products[4]}>
+            <div className="overlap-group1-1">
+              <img className="image-7" src={products[4].imageSrc} />
               <p className="desc-7 inter-normal-eerie-black-16px">
-                {products[3].title}
+                {products[4].title}
               </p>
               <div className="price-7 valign-text-middle inter-bold-black-24px">
-                {products[3].price}
+                {products[4].price}
               </div>
-              <p className="additional-8 valign-text-middle inter-normal-topaz-14px">
-                {products[3].description}
-              </p>
-              <Rating />
+              <div className="additional-11 valign-text-middle inter-normal-topaz-14px">
+                {products[4].description}
+              </div>
+              <AddToCart product={products[4]} />
+              <Rating className={ratingProps.className} />
             </div>
-          </div>
-          <div className="overlap-group1-1">
-            <img className="image-7" src={products[4].imageSrc} />
-            <p className="desc-7 inter-normal-eerie-black-16px">
-              {products[4].title}
-            </p>
-            <div className="price-7 valign-text-middle inter-bold-black-24px">
-              {products[4].price}
-            </div>
-            <div className="additional-11 valign-text-middle inter-normal-topaz-14px">
-              {products[4].description}
-            </div>
-            <Rating className={ratingProps.className} />
-          </div>
+          </ProductOptionsProvider>
         </div>
       </div>
     </div>

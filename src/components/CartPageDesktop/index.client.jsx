@@ -23,36 +23,6 @@ import image3 from '../../assets/img/image-24@2x.png'
 import './CartPageDesktop.css'
 import { useCart } from '@shopify/hydrogen/client'
 
-const newCartValues = {
-  input: {
-    attributes: [
-      {
-        key: '',
-        value: ''
-      }
-    ],
-    buyerIdentity: {
-      countryCode: '',
-      customerAccessToken: '',
-      email: '',
-      phone: ''
-    },
-    discountCodes: [''],
-    lines: [
-      {
-        attributes: {
-          key: '',
-          value: ''
-        },
-        merchandiseId: '',
-        quantity: 1,
-        sellingPlanId: ''
-      }
-    ],
-    note: ''
-  }
-}
-
 function CartPageDesktop(props) {
   const {
     myCart,
@@ -82,8 +52,32 @@ function CartPageDesktop(props) {
     payButtonProps
   } = props
 
-  const { totalQuantity, lines } = useCart()
+  const { lines, cost } = useCart()
   lines ? console.log(lines) : console.log('no lines')
+
+  const ProductCard = ({ merchandise, quantity, cost }) => {
+    return (
+      <div className="flex-col-5">
+        <div className="flex-row-8">
+          <img className="image-15" src={merchandise.image.url} />
+          <div className="desc-13 inter-normal-eerie-black-20px">
+            {merchandise.product.title}
+          </div>
+        </div>
+        <div className="flex-row-9">
+          <AddButton3 className={addButton31Props.className} />
+          <div className="quantity-1 valign-text-middle poppins-normal-black-38px">
+            {quantity}
+          </div>
+          <SubstractButton3 className={substractButton31Props.className} />
+          <RemoveButton3 className={removeButton31Props.className} />
+          <div className="price-13 valign-text-middle inter-bold-black-24px">
+            {`${cost.totalAmount.amount} ${cost.totalAmount.currency}`}
+          </div>
+        </div>
+      </div>
+    )
+  }
 
   return (
     <div className="container-center-horizontal">
@@ -99,72 +93,19 @@ function CartPageDesktop(props) {
             <div className="my-cart-1 valign-text-middle poppins-medium-black-72px">
               {myCart}
             </div>
-            <div className="flex-col-5">
-              <div className="flex-row-8">
-                <img className="image-15" src={image1} />
-                <div className="desc-13 inter-normal-eerie-black-20px">
-                  {desc1}
-                </div>
-              </div>
-              <div className="flex-row-9">
-                <AddButton3 className={addButton31Props.className} />
-                <div className="quantity-1 valign-text-middle poppins-normal-black-38px">
-                  {quantity1}
-                </div>
-                <SubstractButton3
-                  className={substractButton31Props.className}
+            {lines !== [] &&
+              lines.map(({ cost, merchandise, quantity, id }) => (
+                <ProductCard
+                  key={id}
+                  cost={cost}
+                  merchandise={merchandise}
+                  quantity={quantity}
                 />
-                <RemoveButton3 className={removeButton31Props.className} />
-                <div className="price-13 valign-text-middle inter-bold-black-24px">
-                  {price1}
-                </div>
-              </div>
-            </div>
-            <div className="flex-col-6">
-              <div className="flex-row-8">
-                <img className="image-16" src={image2} />
-                <div className="desc-14 inter-normal-eerie-black-20px">
-                  {desc2}
-                </div>
-              </div>
-              <div className="flex-row-11">
-                <AddButton3 className={addButton32Props.className} />
-                <div className="quantity-1 valign-text-middle poppins-normal-black-38px">
-                  {quantity2}
-                </div>
-                <SubstractButton3
-                  className={substractButton32Props.className}
-                />
-                <RemoveButton3 className={removeButton32Props.className} />
-                <div className="price-14 valign-text-middle inter-bold-black-24px">
-                  {price2}
-                </div>
-              </div>
-            </div>
-            <div className="flex-col-7">
-              <div className="flex-row-12">
-                <img className="image-15" src={image3} />
-                <div className="desc-15 inter-normal-eerie-black-20px">
-                  {desc3}
-                </div>
-              </div>
-              <div className="flex-row-9">
-                <AddButton3 className={addButton33Props.className} />
-                <div className="quantity-1 valign-text-middle poppins-normal-black-38px">
-                  {quantity3}
-                </div>
-                <SubstractButton3
-                  className={substractButton33Props.className}
-                />
-                <RemoveButton3 className={removeButton33Props.className} />
-                <div className="price-13 valign-text-middle inter-bold-black-24px">
-                  {price3}
-                </div>
-              </div>
-            </div>
+              ))}
             <div className="overlap-group3-3">
               <div className="total-35699-1 valign-text-middle poppins-medium-black-26px">
-                {total35699}
+                {cost &&
+                  `${cost.totalAmount.amount} ${cost.totalAmount.currencyCode}`}
               </div>
             </div>
           </div>
