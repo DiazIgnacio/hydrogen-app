@@ -16,9 +16,6 @@ import Discover from '../Discover/index'
 import PayButton from '../PayButton/index'
 
 import imageMasterCard from '../../assets/img/mastercard-1@2x.svg'
-import image1 from '../../assets/img/image-26@2x.png'
-import image2 from '../../assets/img/image-22@2x.png'
-import image3 from '../../assets/img/image-24@2x.png'
 
 import './CartPageDesktop.css'
 import { useCart } from '@shopify/hydrogen/client'
@@ -26,33 +23,17 @@ import { useCart } from '@shopify/hydrogen/client'
 function CartPageDesktop(props) {
   const {
     myCart,
-    desc1,
-    quantity1,
-    price1,
-    desc2,
-    quantity2,
-    price2,
-    desc3,
-    quantity3,
-    price3,
-    total35699,
     button2Props,
     button3Props,
     addButton31Props,
     substractButton31Props,
     removeButton31Props,
-    addButton32Props,
-    substractButton32Props,
-    removeButton32Props,
-    addButton33Props,
-    substractButton33Props,
-    removeButton33Props,
     googlePayProps,
     discoverProps,
     payButtonProps
   } = props
 
-  const { lines, cost } = useCart()
+  const { lines, cost, checkoutUrl } = useCart()
   lines ? console.log(lines) : console.log('no lines')
 
   const ProductCard = ({ merchandise, quantity, cost }) => {
@@ -72,10 +53,17 @@ function CartPageDesktop(props) {
           <SubstractButton3 className={substractButton31Props.className} />
           <RemoveButton3 className={removeButton31Props.className} />
           <div className="price-13 valign-text-middle inter-bold-black-24px">
-            {`${cost.totalAmount.amount} ${cost.totalAmount.currency}`}
+            {`${cost.totalAmount.amount} ${cost.totalAmount.currencyCode}`}
           </div>
         </div>
       </div>
+    )
+  }
+
+  const onPayHandler = () => {
+    window.open(
+      checkoutUrl,
+      '_blank' // <- This is what makes it open in a new window.
     )
   }
 
@@ -129,7 +117,10 @@ function CartPageDesktop(props) {
                 </div>
               </div>
             </div>
-            <PayButton className={payButtonProps.className} />
+            <PayButton
+              className={payButtonProps.className}
+              onClick={onPayHandler}
+            />
           </div>
         </div>
       </div>

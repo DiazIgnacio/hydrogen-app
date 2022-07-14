@@ -21,30 +21,11 @@ import imageMasterCard from '../../assets/img/mastercard@2x.svg'
 import './CartPageTablet.css'
 
 function CartPageTablet(props) {
-  const {
-    myCart,
-    image1,
-    desc1,
-    quantity1,
-    price1,
-    image2,
-    desc2,
-    quantity2,
-    price2,
-    image3,
-    desc3,
-    quantity3,
-    price3,
-    total35699,
-    removeButton3Props,
-    googlePayProps
-  } = props
+  const { myCart, googlePayProps } = props
 
-  const { totalQuantity, lines, cost } = useCart()
-  lines ? console.log(lines) : console.log('no lines')
-  cost && console.log(cost)
+  const { lines, cost, checkoutUrl } = useCart()
 
-  const ProductCard = ({ merchandise, quantity, cost }) => {
+  const ProductCard = ({ merchandise, quantity, cost, id }) => {
     return (
       <div className="ecommerce-item">
         <div className="flex-col-1">
@@ -67,6 +48,13 @@ function CartPageTablet(props) {
           </div>
         </div>
       </div>
+    )
+  }
+
+  const onPayHandler = () => {
+    window.open(
+      checkoutUrl,
+      '_blank' // <- This is what makes it open in a new window.
     )
   }
 
@@ -117,7 +105,7 @@ function CartPageTablet(props) {
             </div>
           </div>
         </div>
-        <PayButton />
+        <PayButton onClick={onPayHandler} />
       </div>
     </div>
   )
