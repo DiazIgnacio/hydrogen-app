@@ -9,7 +9,7 @@ function EcommerceItemDesktop(props) {
     props
 
   return (
-    <ProductOptionsProvider data={product}>
+    <ProductOptionsProvider data={product ? product : {}}>
       <div className={`ecommerce-item-desktop-1 ${className || ''}`}>
         <div className="overlap-group2-1">
           <img className="image-5" src={image} />
@@ -20,7 +20,7 @@ function EcommerceItemDesktop(props) {
           <p className="additional-6 valign-text-middle inter-normal-topaz-14px">
             {additional}
           </p>
-          <AddToCart product={product} />
+          {AddToCart && <AddToCart product={product} />}
           <Rating />
         </div>
       </div>
