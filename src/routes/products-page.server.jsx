@@ -14,6 +14,7 @@ const queryString = gql`
     products(first: 100) {
       edges {
         node {
+          id
           description
           priceRange {
             maxVariantPrice {
@@ -25,6 +26,13 @@ const queryString = gql`
           images(first: 1) {
             nodes {
               src
+            }
+          }
+          variants(first: 1) {
+            edges {
+              node {
+                id
+              }
             }
           }
         }
@@ -39,12 +47,13 @@ export default function ProductsPage() {
   })
 
   const products = data.products.edges.map(({ node }) => {
-    const { description, priceRange, title, images } = node
+    const { description, priceRange, title, images, variants } = node
     return {
       title,
       description,
       price: priceRange.maxVariantPrice.amount,
-      imageSrc: images.nodes[0].src
+      imageSrc: images.nodes[0].src,
+      variantId: variants.edges[0].node.id
     }
   })
 

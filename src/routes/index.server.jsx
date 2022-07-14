@@ -47,13 +47,13 @@ export default function Home() {
   })
 
   const products = data.products.edges.map(({ node }) => {
-    const { description, priceRange, title, images } = node
+    const { description, priceRange, title, images, variants } = node
     return {
       title,
       description,
       price: priceRange.maxVariantPrice.amount,
       imageSrc: images.nodes[0].src,
-      variantId: node.variants.edges[0].node.id
+      variantId: variants.edges[0].node.id
     }
   })
 
