@@ -33,9 +33,10 @@ function CartPageDesktop(props) {
     payButtonProps
   } = props
 
-  const { lines, cost, checkoutUrl } = useCart()
+  const { lines, cost, checkoutUrl, linesUpdate, linesRemove } = useCart()
 
-  const ProductCard = ({ merchandise, quantity, cost }) => {
+  const ProductCard = ({ line }) => {
+    const { merchandise, quantity, cost, id } = line
     return (
       <div className="flex-col-5">
         <div className="flex-row-8">
@@ -45,12 +46,27 @@ function CartPageDesktop(props) {
           </div>
         </div>
         <div className="flex-row-9">
-          <AddButton3 className={addButton31Props.className} />
+          <AddButton3
+            className={addButton31Props.className}
+            onClick={() => {
+              linesUpdate([{ id, quantity: quantity + 1 }])
+            }}
+          />
           <div className="quantity-1 valign-text-middle poppins-normal-black-38px">
             {quantity}
           </div>
-          <SubstractButton3 className={substractButton31Props.className} />
-          <RemoveButton3 className={removeButton31Props.className} />
+          <SubstractButton3
+            className={substractButton31Props.className}
+            onClick={() => {
+              linesUpdate([{ id, quantity: quantity - 1 }])
+            }}
+          />
+          <RemoveButton3
+            className={removeButton31Props.className}
+            onClick={() => {
+              linesRemove([id])
+            }}
+          />
           <div className="price-13 valign-text-middle inter-bold-black-24px">
             {`${cost.totalAmount.amount} ${cost.totalAmount.currencyCode}`}
           </div>
@@ -81,14 +97,7 @@ function CartPageDesktop(props) {
               {myCart}
             </div>
             {lines !== [] &&
-              lines.map(({ cost, merchandise, quantity, id }) => (
-                <ProductCard
-                  key={id}
-                  cost={cost}
-                  merchandise={merchandise}
-                  quantity={quantity}
-                />
-              ))}
+              lines.map(line => <ProductCard key={line.id} line={line} />)}
             <div className="overlap-group3-3">
               <div className="total-35699-1 valign-text-middle poppins-medium-black-26px">
                 {cost &&

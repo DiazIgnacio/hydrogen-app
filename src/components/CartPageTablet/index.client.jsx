@@ -23,7 +23,7 @@ import './CartPageTablet.css'
 function CartPageTablet(props) {
   const { myCart, googlePayProps } = props
 
-  const { lines, cost, checkoutUrl } = useCart()
+  const { lines, cost, checkoutUrl, linesUpdate, linesRemove } = useCart()
 
   const ProductCard = ({ merchandise, quantity, cost, id }) => {
     return (
@@ -36,12 +36,24 @@ function CartPageTablet(props) {
             </div>
           </div>
           <div className="flex-row">
-            <AddButton3 />
+            <AddButton3
+              onClick={() => {
+                linesUpdate([{ id, quantity: quantity + 1 }])
+              }}
+            />
             <div className="quantity valign-text-middle poppins-normal-black-38px">
               {quantity}
             </div>
-            <SubstractButton3 />
-            <RemoveButton3 />
+            <SubstractButton3
+              onClick={() => {
+                linesUpdate([{ id, quantity: quantity - 1 }])
+              }}
+            />
+            <RemoveButton3
+              onClick={() => {
+                linesRemove([id])
+              }}
+            />
             <div className="price-10 valign-text-middle inter-bold-black-24px">
               {`${cost.totalAmount.amount} ${cost.totalAmount.currencyCode}`}
             </div>
