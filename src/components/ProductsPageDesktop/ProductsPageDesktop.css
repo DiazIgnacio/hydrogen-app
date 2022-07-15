@@ -21,8 +21,8 @@
 .flex-row-15 {
   align-items: flex-start;
   display: flex;
-  height: 1508px;
-  margin-right: 63.0px;
+  height: 1650px;
+  margin-right: 63px;
   margin-top: 52px;
   min-width: 1583px;
   position: relative;
@@ -33,9 +33,9 @@
   align-self: flex-end;
   background-color: var(--white);
   border-radius: 8px;
-  box-shadow: 0px 2px 4px #5a5b6a3d , 0px 1px 2px #3a3a443d;
+  box-shadow: 0px 2px 4px #5a5b6a3d, 0px 1px 2px #3a3a443d;
   display: flex;
-  height: 1560px;
+  height: 1650px;
   margin-bottom: -52px;
   margin-left: 174px;
   min-width: 1114px;
@@ -88,7 +88,7 @@
 .additional-17 {
   height: 41px;
   letter-spacing: 0.25px;
-  line-height: 20.0px;
+  line-height: 20px;
   margin-top: 8px;
   width: 227px;
 }
@@ -122,7 +122,7 @@
 .additional-18 {
   height: 21px;
   letter-spacing: 0.25px;
-  line-height: 20.0px;
+  line-height: 20px;
   margin-top: 18px;
   white-space: nowrap;
   width: 227px;
@@ -181,7 +181,7 @@
 
 .span0-3 {
   letter-spacing: 0.04px;
-  line-height: 20.0px;
+  line-height: 20px;
 }
 
 .span1-3 {
@@ -193,7 +193,7 @@
   align-items: center;
   background-color: var(--white);
   border-radius: 8px;
-  box-shadow: 0px 4px 8px #5c6bc033 , 0px 2px 4px #3b457b33;
+  box-shadow: 0px 4px 8px #5c6bc033, 0px 2px 4px #3b457b33;
   display: flex;
   flex-direction: column;
   margin-left: 2px;
@@ -213,7 +213,7 @@
 .additional-21 {
   height: 21px;
   letter-spacing: 0.25px;
-  line-height: 20.0px;
+  line-height: 20px;
   margin-top: 18px;
   white-space: nowrap;
   width: 226px;
@@ -235,7 +235,7 @@
 .additional-20 {
   height: 41px;
   letter-spacing: 0.25px;
-  line-height: 20.0px;
+  line-height: 20px;
   margin-top: 8px;
   width: 226px;
 }
@@ -293,4 +293,3 @@
   position: relative;
   width: 262px;
 }
-

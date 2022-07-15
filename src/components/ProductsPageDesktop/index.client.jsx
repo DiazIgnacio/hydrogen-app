@@ -5,12 +5,10 @@ import Button2 from '../Button2/index'
 import CartButton5 from '../CartButton5/index'
 import Left from '../Left/index'
 import Rating from '../Rating/index'
+import AddToCartButton from '../AddToCartButton/index.client'
 import './ProductsPageDesktop.css'
 
-import {
-  AddToCartButton,
-  ProductOptionsProvider
-} from '@shopify/hydrogen/client'
+import { ProductOptionsProvider } from '@shopify/hydrogen/client'
 
 function ProductsPageDesktop(props) {
   const {
@@ -23,16 +21,6 @@ function ProductsPageDesktop(props) {
     rating5Props,
     products
   } = props
-
-  const AddToCart = ({ product }) => (
-    <AddToCartButton
-      variantId={product.variantId}
-      quantity={1}
-      accessibleAddingToCartLabel="Adding item to your cart"
-    >
-      Add to Cart
-    </AddToCartButton>
-  )
 
   return (
     <div className="container-center-horizontal">
@@ -60,8 +48,8 @@ function ProductsPageDesktop(props) {
                   <p className="additional-17 valign-text-middle inter-normal-topaz-14px">
                     {products[0].description}
                   </p>
-                  <AddToCart product={products[0]} />
                   <Rating />
+                  <AddToCartButton product={products[0]} />
                 </div>
               </ProductOptionsProvider>
 
@@ -78,8 +66,8 @@ function ProductsPageDesktop(props) {
                   <p className="additional-17 valign-text-middle inter-normal-topaz-14px">
                     {products[1].description}
                   </p>
-                  <AddToCart product={products[1]} />
                   <Rating />
+                  <AddToCartButton product={products[1]} />
                 </div>
               </ProductOptionsProvider>
 
@@ -96,8 +84,8 @@ function ProductsPageDesktop(props) {
                   <div className="additional-18 valign-text-middle inter-normal-topaz-14px">
                     {products[2].description}
                   </div>
-                  <AddToCart product={products[2]} />
                   <Rating className={rating1Props.className} />
+                  <AddToCartButton product={products[2]} />
                 </div>
               </ProductOptionsProvider>
             </div>
@@ -119,8 +107,8 @@ function ProductsPageDesktop(props) {
                       </span>
                     </span>
                   </p>
-                  <AddToCart product={products[3]} />
                   <Rating />
+                  <AddToCartButton product={products[3]} />
                 </div>
               </ProductOptionsProvider>
 
@@ -137,8 +125,8 @@ function ProductsPageDesktop(props) {
                   <div className="additional-21 valign-text-middle inter-normal-topaz-14px">
                     {products[4].description}
                   </div>
-                  <AddToCart product={products[4]} />
                   <Rating className={rating2Props.className} />
+                  <AddToCartButton product={products[4]} />
                 </div>
               </ProductOptionsProvider>
 
@@ -155,8 +143,8 @@ function ProductsPageDesktop(props) {
                   <p className="additional-20 valign-text-middle inter-normal-topaz-14px">
                     {products[5].description}
                   </p>
-                  <AddToCart product={products[5]} />
                   <Rating />
+                  <AddToCartButton product={products[5]} />
                 </div>
               </ProductOptionsProvider>
             </div>
@@ -174,8 +162,8 @@ function ProductsPageDesktop(props) {
                   <div className="additional-18 valign-text-middle inter-normal-topaz-14px">
                     {products[6].description}
                   </div>
-                  <AddToCart product={products[6]} />
                   <Rating className={rating3Props.className} />
+                  <AddToCartButton product={products[6]} />
                 </div>
               </ProductOptionsProvider>
 
@@ -196,8 +184,8 @@ function ProductsPageDesktop(props) {
                       </span>
                     </span>
                   </p>
-                  <AddToCart product={products[7]} />
                   <Rating className={rating4Props.className} />
+                  <AddToCartButton product={products[7]} />
                 </div>
               </ProductOptionsProvider>
 
@@ -214,8 +202,8 @@ function ProductsPageDesktop(props) {
                   <p className="additional-17 valign-text-middle inter-normal-topaz-14px">
                     {products[8].description}
                   </p>
-                  <AddToCart product={products[8]} />
                   <Rating />
+                  <AddToCartButton product={products[8]} />
                 </div>
               </ProductOptionsProvider>
             </div>
@@ -233,8 +221,8 @@ function ProductsPageDesktop(props) {
                   <p className="additional-20 valign-text-middle inter-normal-topaz-14px">
                     {products[9].description}
                   </p>
-                  <AddToCart product={products[9]} />
                   <Rating />
+                  <AddToCartButton product={products[9]} />
                 </div>
               </ProductOptionsProvider>
 
@@ -251,8 +239,8 @@ function ProductsPageDesktop(props) {
                   <p className="additional-20 valign-text-middle inter-normal-topaz-14px">
                     {products[10].description}
                   </p>
-                  <AddToCart product={products[10]} />
                   <Rating />
+                  <AddToCartButton product={products[10]} />
                 </div>
               </ProductOptionsProvider>
 
@@ -273,8 +261,8 @@ function ProductsPageDesktop(props) {
                       </span>
                     </span>
                   </p>
-                  <AddToCart product={products[11]} />
                   <Rating className={rating5Props.className} />
+                  <AddToCartButton product={products[11]} />
                 </div>
               </ProductOptionsProvider>
             </div>
