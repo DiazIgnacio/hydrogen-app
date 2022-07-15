@@ -1,12 +1,22 @@
 import React from 'react'
 import Rating from '../Rating'
+
+import AddToCartButton from '../AddToCartButton/index.client'
+
 import './EcommerceItemDesktop.css'
 
 import { ProductOptionsProvider } from '@shopify/hydrogen/client'
 
 function EcommerceItemDesktop(props) {
-  const { image, desc, price, additional, className, product, AddToCart } =
-    props
+  const {
+    image,
+    desc,
+    price,
+    additional,
+    className,
+    product,
+    AddToCartButton
+  } = props
 
   return (
     <ProductOptionsProvider data={product ? product : {}}>
@@ -20,7 +30,7 @@ function EcommerceItemDesktop(props) {
           <p className="additional-6 valign-text-middle inter-normal-topaz-14px">
             {additional}
           </p>
-          {AddToCart && <AddToCart product={product} />}
+          {AddToCartButton && <AddToCartButton product={product} />}
           <Rating />
         </div>
       </div>

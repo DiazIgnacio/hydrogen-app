@@ -4,27 +4,15 @@ import TextField from '../TextField/index'
 import ProductsButton from '../ProductsButton/index'
 import CartButton from '../CartButton/index'
 import Rating from '../Rating/index'
+import AddToCartButton from '../AddToCartButton/index.client'
 import './HomePageDesktop.css'
 
-import {
-  AddToCartButton,
-  ProductOptionsProvider
-} from '@shopify/hydrogen/client'
+import { ProductOptionsProvider } from '@shopify/hydrogen/client'
 
 import overlapGroup from '../../assets/img/rectangle-1@1x.png'
 
 function HomePageDesktop(props) {
   const { place, topProducts, ratingProps, products } = props
-
-  const AddToCart = ({ product }) => (
-    <AddToCartButton
-      variantId={product.variantId}
-      quantity={1}
-      accessibleAddingToCartLabel="Adding item to your cart"
-    >
-      Add to Cart
-    </AddToCartButton>
-  )
 
   return (
     <div className="container-center-horizontal">
@@ -59,7 +47,7 @@ function HomePageDesktop(props) {
               <p className="additional valign-text-middle inter-normal-topaz-14px">
                 {products[0].description}
               </p>
-              <AddToCart product={products[0]} />
+              <AddToCartButton product={products[0]} />
               <Rating />
             </div>
           </ProductOptionsProvider>
@@ -79,7 +67,7 @@ function HomePageDesktop(props) {
                   </span>
                 </span>
               </p>
-              <AddToCart product={products[1]} />
+              <AddToCartButton product={products[1]} />
               <Rating />
             </div>
           </ProductOptionsProvider>
@@ -96,7 +84,7 @@ function HomePageDesktop(props) {
               <div className="additional-2 valign-text-middle inter-normal-topaz-14px">
                 {products[2].description}
               </div>
-              <AddToCart product={products[2]} />
+              <AddToCartButton product={products[2]} />
               <Rating className={ratingProps.className} />
             </div>
           </ProductOptionsProvider>
@@ -113,7 +101,7 @@ function HomePageDesktop(props) {
               <p className="additional-3 valign-text-middle inter-normal-topaz-14px">
                 {products[3].description}
               </p>
-              <AddToCart product={products[3]} />
+              <AddToCartButton product={products[3]} />
               <Rating />
             </div>
           </ProductOptionsProvider>
@@ -130,7 +118,7 @@ function HomePageDesktop(props) {
               <p className="additional valign-text-middle inter-normal-topaz-14px">
                 {products[4].description}
               </p>
-              <AddToCart product={products[4]} />
+              <AddToCartButton product={products[4]} />
               <Rating />
             </div>
           </ProductOptionsProvider>

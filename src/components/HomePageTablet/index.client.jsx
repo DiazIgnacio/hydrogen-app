@@ -3,27 +3,16 @@ import Button from '../Button/index'
 import ProductsButton2 from '../ProductsButton2/index'
 import CartButton2 from '../CartButton2/index'
 import Rating from '../Rating/index'
+import AddToCartButton from '../AddToCartButton/index.client'
+
 import './HomePageTablet.css'
 
-import {
-  AddToCartButton,
-  ProductOptionsProvider
-} from '@shopify/hydrogen/client'
+import { ProductOptionsProvider } from '@shopify/hydrogen/client'
 
 import overlapGroup from '../../assets/img/rectangle-1@1x.png'
 
 function HomePageTablet(props) {
   const { place, topProducts, ratingProps, products } = props
-
-  const AddToCart = ({ product }) => (
-    <AddToCartButton
-      variantId={product.variantId}
-      quantity={1}
-      accessibleAddingToCartLabel="Adding item to your cart"
-    >
-      Add to Cart
-    </AddToCartButton>
-  )
 
   return (
     <div className="container-center-horizontal">
@@ -56,7 +45,7 @@ function HomePageTablet(props) {
                 <p className="additional-9 valign-text-middle inter-normal-topaz-14px">
                   {products[0].description}
                 </p>
-                <AddToCart product={products[0]} />
+                <AddToCartButton product={products[0]} />
                 <Rating />
               </div>
             </ProductOptionsProvider>
@@ -72,7 +61,7 @@ function HomePageTablet(props) {
                 <p className="additional-8 valign-text-middle inter-normal-topaz-14px">
                   {products[1].description}
                 </p>
-                <AddToCart product={products[1]} />
+                <AddToCartButton product={products[1]} />
                 <Rating />
               </div>
             </ProductOptionsProvider>
@@ -90,7 +79,7 @@ function HomePageTablet(props) {
                 <p className="additional-10 valign-text-middle inter-normal-topaz-14px">
                   {products[2].description}
                 </p>
-                <AddToCart product={products[2]} />
+                <AddToCartButton product={products[2]} />
                 <Rating />
               </div>
             </ProductOptionsProvider>
@@ -106,7 +95,7 @@ function HomePageTablet(props) {
                 <p className="additional-8 valign-text-middle inter-normal-topaz-14px">
                   {products[3].description}
                 </p>
-                <AddToCart product={products[3]} />
+                <AddToCartButton product={products[3]} />
                 <Rating />
               </div>
             </ProductOptionsProvider>
@@ -123,7 +112,7 @@ function HomePageTablet(props) {
               <div className="additional-11 valign-text-middle inter-normal-topaz-14px">
                 {products[4].description}
               </div>
-              <AddToCart product={products[4]} />
+              <AddToCartButton product={products[4]} />
               <Rating className={ratingProps.className} />
             </div>
           </ProductOptionsProvider>

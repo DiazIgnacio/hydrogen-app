@@ -4,12 +4,10 @@ import Button2 from '../Button2/index'
 import CartButton3 from '../CartButton3/index'
 import Rating from '../Rating/index'
 import Left from '../Left/index'
+import AddToCartButton from '../AddToCartButton/index.client'
 import './ProductsPageTablet.css'
 
-import {
-  AddToCartButton,
-  ProductOptionsProvider
-} from '@shopify/hydrogen/client'
+import { ProductOptionsProvider } from '@shopify/hydrogen/client'
 
 function ProductsPageTablet(props) {
   const { products } = props
@@ -24,19 +22,9 @@ function ProductsPageTablet(props) {
       <p className="additional-12 valign-text-middle inter-normal-topaz-14px">
         {product.description}
       </p>
-      <AddToCart product={product} />
+      <AddToCartButton product={product} />
       <Rating />
     </ProductOptionsProvider>
-  )
-
-  const AddToCart = ({ product }) => (
-    <AddToCartButton
-      variantId={product.variantId}
-      quantity={1}
-      accessibleAddingToCartLabel="Adding item to your cart"
-    >
-      Add to Cart
-    </AddToCartButton>
   )
 
   return (

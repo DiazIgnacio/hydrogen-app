@@ -3,27 +3,15 @@ import Button from '../Button/index'
 import MenuButton from '../MenuButton/index'
 import EcommerceItemDesktop from '../EcommerceItemDesktop/index'
 import Rating from '../Rating/index'
+import AddToCartButton from '../AddToCartButton/index.client'
 import './HomePageMenuCloseMobile.css'
 
-import {
-  AddToCartButton,
-  ProductOptionsProvider
-} from '@shopify/hydrogen/client'
+import { ProductOptionsProvider } from '@shopify/hydrogen/client'
 
 import heroBg from '../../assets/img/rectangle-1@1x.png'
 
 function HomePageMenuCloseMobile(props) {
   const { place, topProducts, products } = props
-
-  const AddToCart = ({ product }) => (
-    <AddToCartButton
-      variantId={product.variantId}
-      quantity={1}
-      accessibleAddingToCartLabel="Adding item to your cart"
-    >
-      Add to Cart
-    </AddToCartButton>
-  )
 
   return (
     <div className="container-center-horizontal">
@@ -45,7 +33,7 @@ function HomePageMenuCloseMobile(props) {
           price={products[0].price}
           additional={products[0].title}
           product={products[0]}
-          AddToCart={AddToCart}
+          AddToCartButton={AddToCartButton}
         />
         <div className="ecommerce-item-desktop">
           <ProductOptionsProvider data={products[1]}>
@@ -60,7 +48,7 @@ function HomePageMenuCloseMobile(props) {
               <p className="additional-4 valign-text-middle inter-normal-topaz-14px">
                 {products[1].description}
               </p>
-              <AddToCart product={products[1]} />
+              <AddToCartButton product={products[1]} />
               <Rating />
             </div>
           </ProductOptionsProvider>

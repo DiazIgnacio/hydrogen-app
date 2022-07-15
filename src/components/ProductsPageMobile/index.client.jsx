@@ -3,12 +3,12 @@ import Button from '../Button/index'
 import MenuButton2 from '../MenuButton2/index'
 import EcommerceItemDesktop from '../EcommerceItemDesktop/index'
 import Rating from '../Rating/index'
+
+import AddToCartButton from '../AddToCartButton/index.client'
+
 import './ProductsPageMobile.css'
 
-import {
-  AddToCartButton,
-  ProductOptionsProvider
-} from '@shopify/hydrogen/client'
+import { ProductOptionsProvider } from '@shopify/hydrogen/client'
 
 function ProductsPageMobile(props) {
   const {
@@ -17,16 +17,6 @@ function ProductsPageMobile(props) {
     ratingProps,
     products
   } = props
-
-  const AddToCart = ({ product }) => (
-    <AddToCartButton
-      variantId={product.variantId}
-      quantity={1}
-      accessibleAddingToCartLabel="Adding item to your cart"
-    >
-      Add to Cart
-    </AddToCartButton>
-  )
 
   return (
     <div className="container-center-horizontal">
@@ -42,7 +32,7 @@ function ProductsPageMobile(props) {
           additional={products[0].description}
           className={ecommerceItemDesktop1Props.className}
           product={products[0]}
-          AddToCart={AddToCart}
+          AddToCartButton={AddToCartButton}
         />
         <EcommerceItemDesktop
           image={products[1].imageSrc}
@@ -51,7 +41,7 @@ function ProductsPageMobile(props) {
           additional={products[1].description}
           className={ecommerceItemDesktop2Props.className}
           product={products[1]}
-          AddToCart={AddToCart}
+          AddToCartButton={AddToCartButton}
         />
         <div className="ecommerce-item-desktop-4">
           <ProductOptionsProvider data={products[2]}>
@@ -66,7 +56,7 @@ function ProductsPageMobile(props) {
               <div className="additional-7 valign-text-middle inter-normal-topaz-14px">
                 {products[2].description}
               </div>
-              <AddToCart product={products[2]} />
+              <AddToCartButton product={products[2]} />
               <Rating className={ratingProps.className} />
             </div>
           </ProductOptionsProvider>

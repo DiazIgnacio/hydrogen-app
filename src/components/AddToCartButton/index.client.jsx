@@ -5,7 +5,10 @@ const AddToCartButton = ({ product }) => (
     variantId={product.variantId}
     quantity={1}
     accessibleAddingToCartLabel="Adding item to your cart"
-    className="px-4 py-2 text-white bg-blue-400 hover:bg-blue-500 border-none transition-all rounded-xl mt-4 w-full mx-6"
+    className="px-4 py-2 text-white bg-blue-400 hover:bg-blue-500 border-none transition-all rounded-xl mt-4 w-full mx-6 cursor-pointer"
+    onClick={() => {
+      alert('Added to cart')
+    }}
   >
     Add to Cart
   </HydrogenAddToCartButton>
