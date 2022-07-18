@@ -85,6 +85,7 @@ function CartPageTablet(props) {
           lines.map(({ cost, merchandise, quantity, id }) => (
             <ProductCard
               key={id}
+              id={id}
               cost={cost}
               merchandise={merchandise}
               quantity={quantity}
